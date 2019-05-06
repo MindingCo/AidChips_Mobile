@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent" android:layout_height="match_parent"
+>
+    <Button android:id="@+id/deny_permission"
+            android:text="@string/deny_permission"
+            style="@style/Button.Twin"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/ic_button_secondary_rounded"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline9"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Button android:id="@+id/grant_permission"
+            android:text="@string/grant_permission"
+            style="@style/Button.Twin"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/bone"
+            android:background="@drawable/background_button_positive"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/guideline9" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/MarginReallyLittle"
+                    app:layout_constraintTop_toBottomOf="@id/deny_permission" app:layout_constraintEnd_toStartOf="parent" />
+    <android.support.constraint.Guideline android:id="@+id/guideline9"
+                                          android:orientation="vertical"
+                                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          app:layout_constraintGuide_percent="0.5"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:targetApi="o">
+    <style name="Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:textColor">@color/colorTextSecondary</item>-->
+    </style>
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+    <style name="Splash.Post" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="Item">
+        <item name="android:paddingTop"> 5dp </item>
+        <item name="android:layout_marginBottom"> 2dp </item>
+    </style>
+    <style name="Text">
+        <item name="android:textSize">@dimen/TextLittleBig</item>
+    </style>
+    <style name="Text.Little" parent="Text">
+        <item name="android:textSize">@dimen/TextNormal</item>
+    </style>
+    <style name="Text.ReallyLittle" parent="Text">
+        <item name="android:textSize">@dimen/TextSmall</item>
+    </style>
+    <style name="Text.Title" parent="Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/TextTitle</item>
+    </style>
+    <style name="Text.Light" parent="Text">
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Text.Bold" parent="Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Light.Invert" parent="Text.Light">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Text.Title.Invert" parent="Text.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Text.Little.Bold" parent="Text.Little">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Button">
+        <item name="android:background">@drawable/ic_button_rounded</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+    <style name="Button.Secondary" parent="Button">
+        <item name="android:background">@drawable/ic_button_secondary_rounded</item>
+    </style>
+    <style name="Button.Twin" parent="Button">
+        <item name="android:layout_marginStart"> @dimen/MarginReallyLittle </item>
+        <item name="android:layout_marginEnd"> @dimen/MarginReallyLittle </item>
+    </style>
+</resources>
