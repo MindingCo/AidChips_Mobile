@@ -78,6 +78,7 @@
     <string name="notify_request">Solicitud de acceso</string>
     <string name="permissions">Permisos</string>
     <string name="phone">Celular:</string>
+    <string name="pre_chip_serial">Serie del chip:</string>
     <string name="problem_existent_user">¡Ya existe un usuario con ese nombre!</string>
     <string name="problem_no_exists_user">El usuario no ha sido registrado</string>
     <string name="problem_wrong_password">Contraseña Erronea</string>
@@ -90,7 +91,7 @@
     <string name="signup_title">Regístrate!</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"+999"</string>
     <string name="title_alerts">Alertas</string>
-    <string name="title_home">Inicio</string>
+    <string name="title_home">Tus Chips</string>
     <string name="title_permissions">Permisos</string>
     <string name="title_profile">Perfil</string>
     <string name="title_settings">Ajustes</string>

@@ -27,7 +27,7 @@
     <string name="given">Otorgados</string>
     <string name="received">Recibidos</string>
     <string name="permissions">Permisos</string>
-    <string name="title_home">Inicio</string>
+    <string name="title_home">Tus Chips</string>
     <string name="unkownChip">¡Este chip no es tuyo!</string>
     <string name="request_permission">Pedir permiso</string>
     <string name="update_user">Modificar Datos</string>
@@ -50,4 +50,5 @@
     <string name="problem_no_exists_user">El usuario no ha sido registrado</string>
     <string name="problem_wrong_password">Contraseña Erronea</string>
     <string name="notify_request">Solicitud de acceso</string>
+    <string name="pre_chip_serial">Serie del chip:</string>
 </resources>

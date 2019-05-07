@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="TextNormal">15sp</dimen>
-    <dimen name="TextSmall">12sp</dimen>
-    <dimen name="TextTitle">30sp</dimen>
-</resources>

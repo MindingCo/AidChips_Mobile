@@ -64,6 +64,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
             {
                 if (findViewById<FloatingActionButton>(R.id.fabPermissions).visibility == View.VISIBLE)
                 {
+                    setTitle(R.string.title_home)
                     if (supportFragmentManager.backStackEntryCount > 0)
                         onBackPressed()
                     hideMenu()

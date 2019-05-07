@@ -8,6 +8,7 @@
             android:textColor="@color/bone"
             android:background="@drawable/background_button_negative"
             android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/Margin" android:layout_marginEnd="@dimen/Margin"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"

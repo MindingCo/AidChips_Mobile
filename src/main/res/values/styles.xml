@@ -44,6 +44,9 @@
     <style name="Text.Title.Invert" parent="Text.Title">
         <item name="android:textColor">@android:color/white</item>
     </style>
+    <style name="Text.Title.Light" parent="Text.Title">
+        <item name="android:textStyle">normal</item>
+    </style>
     <style name="Text.Little.Bold" parent="Text.Little">
         <item name="android:textStyle">bold</item>
     </style>

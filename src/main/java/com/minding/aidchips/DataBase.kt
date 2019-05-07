@@ -7,9 +7,18 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONObject
 
-class DataBase
-{
-    private val HOSTNAME: String = "https://service.aidchips.tkDoc
+class DataBase {
+    private val HOSTNAME: String = "https://service.aidchips.tk"
+    interface Action {
+        companion object {
+            val LOGIN = "/login"
+        }
+        interface Add {
+            companion object {
+                val USER = "/add/user"
+                val CHIP = "/add/chip"
+                val ALERT = "/add/alert"
+                val GIVENP = "/add/Permission"
                 val RECEIVEDP = "/add/ReceivedPermission"
             }
         }
@@ -17,6 +26,8 @@ class DataBase
         interface Get {
             companion object {
                 val USER = "/get/user"
+                val CHIP = "/get/chip"
+                val CHIPS = "/get/chips"
                 val ALERT = "/get/alert"
                 val GIVENP = "/get/Permission"
                 val RECEIVEDP = "/get/ReceivedPermission"
@@ -25,24 +36,25 @@ class DataBase
 
         interface Del {
             companion object {
-                val USER = "/del/USER"
+                val USER = "/del/user"
+                val CHIP = "/del/chip"
                 val ALERT = "/del/alert"
-                val GIVENP = "/del/Permission"
-                val RECEIVEDP = "/del/ReceivedPermission"
+                val GIVENP = "/del/givenpermission"
+                val RECEIVEDP = "/del/receivedpermission"
             }
         }
 
         interface Upd {
             companion object {
                 val USER = "/upd/USER"
+                val CHIP = "/upd/chip"
                 val ALERT = "/upd/alert"
                 val GIVENP = "/upd/Permission"
                 val RECEIVEDP = "/upd/ReceivedPermission"
             }
         }
     }
-    interface Method
-    {
+    interface Method {
         companion object {
             val DEPRECATED_GET_OR_POST = -1
             val GET = 0
