@@ -5,10 +5,11 @@ import android.widget.Toast
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import org.json.JSONArray
 import org.json.JSONObject
 
 class DataBase {
-    private val HOSTNAME: String = "https://service.aidchips.tk"
+    val HOSTNAME: String = "https://service.aidchips.tk"
     interface Action {
         companion object {
             val LOGIN = "/login"
@@ -18,7 +19,7 @@ class DataBase {
                 val USER = "/add/user"
                 val CHIP = "/add/chip"
                 val ALERT = "/add/alert"
-                val GIVENP = "/add/Permission"
+                val GIVENP = "/add/Permit"
                 val RECEIVEDP = "/add/ReceivedPermission"
             }
         }
@@ -29,8 +30,8 @@ class DataBase {
                 val CHIP = "/get/chip"
                 val CHIPS = "/get/chips"
                 val ALERT = "/get/alert"
-                val GIVENP = "/get/Permission"
-                val RECEIVEDP = "/get/ReceivedPermission"
+                val GIVENP = "/get/givenpermits"
+                val RECEIVEDP = "/get/receivedpermits"
             }
         }
 
@@ -49,7 +50,7 @@ class DataBase {
                 val USER = "/upd/USER"
                 val CHIP = "/upd/chip"
                 val ALERT = "/upd/alert"
-                val GIVENP = "/upd/Permission"
+                val GIVENP = "/upd/Permit"
                 val RECEIVEDP = "/upd/ReceivedPermission"
             }
         }
@@ -71,21 +72,38 @@ class DataBase {
     @Synchronized fun requestOperation(ctx: Context, action: String, method: Int, params: MutableMap<String, String>, callback: (result: Boolean?) -> Unit )
     {
         Volley.newRequestQueue(ctx)
-            .add(object : StringRequest(method, "$HOSTNAME$action", Response.Listener { response ->
+            .add(object : StringRequest(method, "$HOSTNAME$action", Response.Listener
+            { response ->
                 println("respuesta $response")
                 callback(if(response != "") response!!.toBoolean() else null)
 //                returnable = if (response == "false" || response == "true") response.toBoolean()
 //           <                     else JSONObject(response)
-            }, Response.ErrorListener { e ->
+            }, Response.ErrorListener
+            { e ->
                 Toast.makeText(ctx, e.message, Toast.LENGTH_LONG).show()
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 
-    @Synchronized fun requestJSON( ctx: Context, action: String, method: Int, params: MutableMap<String, String>, callback: (result: JSONObject?) -> Unit  ) {
+    @Synchronized fun requestJSON( ctx: Context, action: String, method: Int, params: MutableMap<String, String>, callback: (result: JSONObject?) -> Unit  )
+    {
         Volley.newRequestQueue(ctx)
-            .add(object : StringRequest(method, "$HOSTNAME$action", Response.Listener { response ->
-                    callback(if (response != "") JSONObject(response) else null)
-            }, Response.ErrorListener { e ->
+            .add(object : StringRequest(method, "$HOSTNAME$action", Response.Listener
+            { response ->
+                callback(if (response != "") JSONObject(response) else null)
+            }, Response.ErrorListener
+            { e ->
+                Toast.makeText(ctx, e.message, Toast.LENGTH_LONG).show()
+            }) { override fun getParams(): MutableMap<String, String> = params })
+    }
+
+    @Synchronized fun requestArrayJSON( ctx: Context, action: String, method: Int, params: MutableMap<String, String>, callback: (result: JSONArray?) -> Unit  )
+    {
+        Volley.newRequestQueue(ctx)
+            .add(object : StringRequest(method, "$HOSTNAME$action", Response.Listener
+            { response ->
+                callback(if (response != "") JSONArray(response) else null)
+            }, Response.ErrorListener
+            { e ->
                 Toast.makeText(ctx, e.message, Toast.LENGTH_LONG).show()
             }) { override fun getParams(): MutableMap<String, String> = params })
     }

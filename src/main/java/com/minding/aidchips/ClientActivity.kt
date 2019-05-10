@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.support.animation.DynamicAnimation
 import android.support.animation.SpringAnimation
@@ -16,11 +17,17 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.View.OnLongClickListener
 import android.widget.TextView
+import android.widget.Toast
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toolbar
+
 
 class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickListener
 {
     private val timeOut: Long = 200
     lateinit var backBtn : ActionBar
+    lateinit var toolbar: android.support.v7.widget.Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -29,18 +36,17 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
 
         if (savedInstanceState == null)
         {
-//            Toast.makeText(this,"savedInstanceState == null", Toast.LENGTH_SHORT).show()
             supportFragmentManager.beginTransaction()
-                .add(R.id.container, HomeFragment.newInstance())
+                .add(R.id.client_content, HomeFragment.newInstance())
                 .commit()
             setTitle(R.string.title_home)
         }
             //        Start config to FAB
-        findViewById<FloatingActionButton>(R.id.fabMain).setOnClickListener(this)
+        findViewById<FloatingActionButton>(R.id.fab_main).setOnClickListener(this)
 
-        val fabPermissions: FloatingActionButton = findViewById(R.id.fabPermissions)
-        val fabProfile: FloatingActionButton = findViewById(R.id.fabProfile)
-        val fabAlerts: FloatingActionButton = findViewById(R.id.fabAlerts)
+        val fabPermissions: FloatingActionButton = findViewById(R.id.fab_permits)
+        val fabProfile: FloatingActionButton = findViewById(R.id.fab_profile)
+        val fabAlerts: FloatingActionButton = findViewById(R.id.fab_alerts)
 
         fabPermissions.setOnClickListener(this)
         fabProfile.setOnClickListener(this)
@@ -49,7 +55,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         fabPermissions.setOnLongClickListener(this)
         fabProfile.setOnLongClickListener(this)
         fabAlerts.setOnLongClickListener(this)
-//        End config to FAB
+            //        End config to FAB
         findViewById<ConstraintLayout>(R.id.curtain).setOnClickListener(this)
 
         setToolbar()
@@ -60,11 +66,12 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         when (v.id)
         {
 //            Start config to FAB
-            R.id.fabMain ->
+            R.id.fab_main ->
             {
-                if (findViewById<FloatingActionButton>(R.id.fabPermissions).visibility == View.VISIBLE)
+                if (findViewById<FloatingActionButton>(R.id.fab_permits).visibility == View.VISIBLE)
                 {
                     setTitle(R.string.title_home)
+                    toolbar.inflateMenu(R.menu.menu_home)
                     if (supportFragmentManager.backStackEntryCount > 0)
                         onBackPressed()
                     hideMenu()
@@ -72,23 +79,26 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
                 else
                     showMenu()
             }
-            R.id.fabPermissions ->
+            R.id.fab_permits ->
             {
                 openFragment(PermissionsFragment.newInstance())
+                toolbar.menu.clear()
                 overridePendingTransition(R.anim.fade_in, R.anim.nothing)
                 hideMenu()
                 setTitle(R.string.title_permissions)
             }
-            R.id.fabProfile ->
+            R.id.fab_profile ->
             {
                 openFragment(ProfileFragment.newInstance())
+                toolbar.menu.clear()
                 overridePendingTransition(R.anim.fade_in, R.anim.nothing)
                 hideMenu()
                 setTitle(R.string.title_profile)
             }
-            R.id.fabAlerts ->
+            R.id.fab_alerts ->
             {
                 openFragment(AlertsFragment.newInstance())
+                toolbar.menu.clear()
                 overridePendingTransition(R.anim.fade_in, R.anim.nothing)
                 hideMenu()
                 setTitle(R.string.title_alerts)
@@ -102,9 +112,9 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         when (v.id)
         {
 //            Start config to FAB
-            R.id.fabPermissions -> showHelp(v)
-            R.id.fabProfile -> showHelp(v)
-            R.id.fabAlerts -> showHelp(v)
+            R.id.fab_permits -> showHelp(v)
+            R.id.fab_profile -> showHelp(v)
+            R.id.fab_alerts -> showHelp(v)
 //            End config to FAB
         }
         return true
@@ -122,7 +132,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         if (fragment !is HomeFragment)
             backBtn.setDisplayHomeAsUpEnabled(true)
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, fragment)
+            .replace(R.id.client_content, fragment)
             .addToBackStack(null)
             .commit()
     }
@@ -130,9 +140,9 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     {
         val arrayList: ArrayList<FloatingActionButton> = ArrayList()
 
-        arrayList.add(findViewById(R.id.fabPermissions))
-        arrayList.add(findViewById(R.id.fabProfile))
-        arrayList.add(findViewById(R.id.fabAlerts))
+        arrayList.add(findViewById(R.id.fab_permits))
+        arrayList.add(findViewById(R.id.fab_profile))
+        arrayList.add(findViewById(R.id.fab_alerts))
 
         return arrayList
     }
@@ -140,10 +150,11 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     private fun showMenu()
     {
 //        showing curtain_out
-        findViewById<ConstraintLayout>(R.id.curtain).also {
-            it.visibility = View.VISIBLE
-            ObjectAnimator.ofFloat(it, "alpha", 0.66f).start()
+        findViewById<ConstraintLayout>(R.id.curtain).apply {
+            visibility = View.VISIBLE
+            ObjectAnimator.ofFloat(this, "alpha", 0.66f).start()
         }
+        findViewById<FloatingActionButton>(R.id.fab_main).setImageResource(R.drawable.ic_home)
 //        showing options
         val options: ArrayList<FloatingActionButton> = getMenusOptions()
         getMenusOptions().forEach { it.visibility = View.VISIBLE }
@@ -170,6 +181,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
             }
             it.visibility = View.GONE
         }
+        findViewById<FloatingActionButton>(R.id.fab_main).setImageResource(R.drawable.ic_suspensivedots)
 //        hiding options
         val options: ArrayList<FloatingActionButton> = getMenusOptions()
 
@@ -187,8 +199,8 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     }
     private fun showHelp(v: View)
     {
-        val title:TextView = findViewById(R.id.TitleNextLayout)
-        val desc :TextView = findViewById(R.id.DescriptionNextLayout)
+        val title:TextView = findViewById(R.id.nextLayout_title)
+        val desc :TextView = findViewById(R.id.nextLayout_description)
 
         if (title.visibility != View.VISIBLE)
         {
@@ -200,17 +212,17 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
 
         when (v.id)
         {
-            R.id.fabPermissions ->
+            R.id.fab_permits ->
             {
                 title.text = getText(R.string.title_permissions)
                 desc.text = getText(R.string.description_permissions)
             }
-            R.id.fabProfile ->
+            R.id.fab_profile ->
             {
                 title.text = getText(R.string.title_profile)
                 desc.text = getText(R.string.description_profile)
             }
-            R.id.fabAlerts ->
+            R.id.fab_alerts ->
             {
                 title.text = getText(R.string.title_alerts)
                 desc.text = getText(R.string.description_alerts)
@@ -219,20 +231,21 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     }
     private fun hideHelp()
     {
-        findViewById<TextView>(R.id.TitleNextLayout).also {
+        findViewById<TextView>(R.id.nextLayout_title).also {
             ObjectAnimator.ofFloat(it, "alpha", 0f).apply {
-                addListener(object : AnimatorListenerAdapter() { override fun onAnimationEnd(anim: Animator) {
+                addListener(object : AnimatorListenerAdapter() { override fun onAnimationEnd(anim: Animator)
+                {
                     it.visibility = View.GONE
                     it.text = null
                 } })
                 duration = timeOut/2
                 start()
             }
-
         }
-        findViewById<TextView>(R.id.DescriptionNextLayout).also {
+        findViewById<TextView>(R.id.nextLayout_description).also {
             ObjectAnimator.ofFloat(it, "alpha", 0f).apply {
-                addListener(object : AnimatorListenerAdapter() { override fun onAnimationEnd(anim: Animator) {
+                addListener(object : AnimatorListenerAdapter() { override fun onAnimationEnd(anim: Animator)
+                {
                     it.visibility = View.GONE
                     it.text = null
                 } })
@@ -244,13 +257,35 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     @SuppressLint("PrivateResource")
     private fun setToolbar()
     {
-        val toolbar: android.support.v7.widget.Toolbar  = findViewById(R.id.toolbar)
+        toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         backBtn = supportActionBar!!
         backBtn.setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_material)
-//        backBtn.setDisplayHomeAsUpEnabled(true)
+        toolbar.setNavigationOnClickListener { onBackPressed() }
+    }
 
-        toolbar.setNavigationOnClickListener {
-            onBackPressed() }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean
+    {
+        menuInflater.inflate(R.menu.menu_home, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean
+    {
+        when (item.itemId)
+        {
+            R.id.menu_add_chip ->
+            {
+                Toast.makeText(this@ClientActivity, "Action clicked", Toast.LENGTH_SHORT).show()
+                return true
+            }
+            R.id.menu_aidchips_web ->
+            {
+                startActivity(Intent(this, CameraActivity::class.java))
+                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

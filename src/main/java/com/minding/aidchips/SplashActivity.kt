@@ -28,6 +28,8 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+//        startService(Intent(this, ServiceReading::class.java))
+
         if (SavedData().getBooleanSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.LOGED))
         {
             startActivity(Intent(this, ClientActivity::class.java))
@@ -57,7 +59,7 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
             handleLoginResult(opr.get())
         else
         {
-            val icon: ImageView = findViewById(R.id.logo)
+            val icon: ImageView = findViewById(R.id.login_logo)
             val (animX, animY) = SpringAnimation(icon, DynamicAnimation.X).setStartVelocity(0.25f).setSpring(SpringForce().setStiffness(SpringForce.STIFFNESS_LOW).setDampingRatio(SpringForce.DAMPING_RATIO_MEDIUM_BOUNCY)) to SpringAnimation(icon, DynamicAnimation.Y).setStartVelocity(0.1f).setSpring(SpringForce().setStiffness(SpringForce.STIFFNESS_LOW).setDampingRatio(SpringForce.DAMPING_RATIO_LOW_BOUNCY))
 
             animY.addEndListener { _, _, _, _ ->
@@ -91,7 +93,7 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         }
         else
         {
-            val icon: ImageView = findViewById(R.id.logo)
+            val icon: ImageView = findViewById(R.id.login_logo)
             val (animX, animY) = SpringAnimation(icon, DynamicAnimation.X).setStartVelocity(0.25f).setSpring(SpringForce().setStiffness(SpringForce.STIFFNESS_LOW).setDampingRatio(SpringForce.DAMPING_RATIO_MEDIUM_BOUNCY)) to SpringAnimation(icon, DynamicAnimation.Y).setStartVelocity(0.1f).setSpring(SpringForce().setStiffness(SpringForce.STIFFNESS_LOW).setDampingRatio(SpringForce.DAMPING_RATIO_LOW_BOUNCY))
 
             animY.addEndListener { _, _, _, _ ->

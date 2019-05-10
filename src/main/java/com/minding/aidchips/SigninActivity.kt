@@ -18,27 +18,27 @@ class SigninActivity : AppCompatActivity(), OnClickListener
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
 
-        findViewById<Button>(R.id.button_go_login).setOnClickListener(this)
-        findViewById<Button>(R.id.button_signin ).setOnClickListener(this)
+        findViewById<Button>(R.id.signin_btn_switch).setOnClickListener(this)
+        findViewById<Button>(R.id.signin_btn_signin ).setOnClickListener(this)
     }
 
     override fun onClick(v: View)
     {
         when (v.id)
         {
-            R.id.button_go_login ->
+            R.id.signin_btn_switch ->
             {
                 startActivity(Intent(this, LoginActivity::class.java))
                 overridePendingTransition(R.anim.fade_in, R.anim.nothing)
                 finish()
             }
-            R.id.button_signin ->
+            R.id.signin_btn_signin ->
             {
-                val name: String = findViewById<EditText>(R.id.field_name).text.toString()
-                val pass: String = findViewById<EditText>(R.id.field_pass).text.toString()
-                val passCo: String = findViewById<EditText>(R.id.field_passConfirm).text.toString()
-                val email : String = findViewById<EditText>(R.id.field_mail).text.toString()
-                val tel : String = findViewById<EditText>(R.id.field_tel).text.toString()
+                val name: String = findViewById<EditText>(R.id.signin_edit_name).text.toString()
+                val pass: String = findViewById<EditText>(R.id.signin_edit_pass).text.toString()
+                val passCo: String = findViewById<EditText>(R.id.signin_edit_passConfirm).text.toString()
+                val email : String = findViewById<EditText>(R.id.signin_edit_email).text.toString()
+                val tel : String = findViewById<EditText>(R.id.signin_edit_phone).text.toString()
                 when
                 {
                     tel.isBlank() || email.isBlank() || passCo.isBlank() || pass.isBlank() || name.isBlank() -> { adviseEmptyField()}

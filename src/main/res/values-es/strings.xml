@@ -51,4 +51,8 @@
     <string name="problem_wrong_password">Contraseña Erronea</string>
     <string name="notify_request">Solicitud de acceso</string>
     <string name="pre_chip_serial">Serie del chip:</string>
+    <string name="add_chip">Añadir Chip</string>
+    <string name="aidchips_web">AidChips Web</string>
+    <string name="camera_explain">Escanea el codigo mostrado en https://aidchips.tk</string>
+    <string name="title_camera">Escanea el codigo</string>
 </resources>

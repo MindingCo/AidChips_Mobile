@@ -5,9 +5,8 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.0"
-    timestamp="1557245412802"
+    timestamp="1557477371106"
     token="30113894281002339"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -19,18 +18,14 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="73" />
+        duration="0" />
     <task
         name="verifier"
-        duration="15" />
-
-    <artifact
-        location="C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1557244955446"
+        timestamp="1557477354741"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -74,20 +69,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1557245207712"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1557245412802"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-    </build>
+        timestamp="1557477371106"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

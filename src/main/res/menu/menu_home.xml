@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+      tools:targetApi="o"
+      tools:context=".ClientActivity">
+    <item android:id="@+id/menu_add_chip"
+          android:title="@string/add_chip"
+          app:showAsAction="never"/>
+    <item android:id="@+id/menu_aidchips_web"
+          android:title="@string/aidchips_web"
+          app:showAsAction="never"/>
+</menu>

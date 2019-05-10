@@ -28,9 +28,9 @@ class LoginActivity : AppCompatActivity(), OnClickListener, GoogleApiClient.OnCo
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        findViewById<Button>(R.id.button_go_signin).setOnClickListener(this)
-        findViewById<Button>(R.id.button_login).setOnClickListener(this)
-        findViewById<com.google.android.gms.common.SignInButton>(R.id.button_login_google).setOnClickListener(this)
+        findViewById<Button>(R.id.login_btn_switch).setOnClickListener(this)
+        findViewById<Button>(R.id.login_btn_login).setOnClickListener(this)
+        findViewById<com.google.android.gms.common.SignInButton>(R.id.login_btn_auth_google).setOnClickListener(this)
 
 //        Api Client
         val gso: GoogleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -59,16 +59,16 @@ class LoginActivity : AppCompatActivity(), OnClickListener, GoogleApiClient.OnCo
     {
         when (v.id)
         {
-            R.id.button_go_signin ->
+            R.id.login_btn_switch ->
             {
                 startActivity(Intent(this, SigninActivity::class.java))
                 overridePendingTransition(R.anim.fade_in, R.anim.nothing)
                 finish()
             }
-            R.id.button_login ->
+            R.id.login_btn_login ->
             {
-                val name: String = findViewById<EditText>(R.id.field_name).text.toString()
-                val pass: String = findViewById<EditText>(R.id.field_pass).text.toString()
+                val name: String = findViewById<EditText>(R.id.login_edit_name).text.toString()
+                val pass: String = findViewById<EditText>(R.id.login_edit_pass).text.toString()
                 when
                 {
                     pass.isBlank() || name.isBlank() -> { adviseEmptyField()}
@@ -102,7 +102,7 @@ class LoginActivity : AppCompatActivity(), OnClickListener, GoogleApiClient.OnCo
                     }
                 }
             }
-            R.id.button_login_google -> Toast.makeText(this, "Funcion inhabilitada por el memento", Toast.LENGTH_SHORT).show()
+            R.id.login_btn_auth_google -> Toast.makeText(this, "Funcion inhabilitada por el memento", Toast.LENGTH_SHORT).show()
             //startActivityForResult(Auth.GoogleSignInApi.getSignInIntent(apiClient), RC_SIGN_IN)
         }
 

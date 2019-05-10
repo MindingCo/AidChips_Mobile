@@ -38,23 +38,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\6396dcf0f16ef503ebf59bc71c454ec5\\res\\values-pt-rBR\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "203",
-                        "endOffsets": "454"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "4014",
-                        "endColumns": "203",
-                        "endOffsets": "4213"
-                    }
-                },
-                {
                     "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\c9cb0537759feb301f08b7e602c1d051\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2",
@@ -69,6 +52,23 @@
                         "startOffsets": "5680",
                         "endColumns": "100",
                         "endOffsets": "5776"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\42f36a78814b53bfadbc2ffca623054f\\res\\values-pt-rBR\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "203",
+                        "endOffsets": "454"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4014",
+                        "endColumns": "203",
+                        "endOffsets": "4213"
                     }
                 }
             ]

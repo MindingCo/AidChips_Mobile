@@ -28,7 +28,7 @@ class ProfileFragment : Fragment(), OnClickListener
 
         view!!.findViewById<Button>(R.id.button_go_settings).setOnClickListener(this)
 
-        view!!.findViewById<TextView>(R.id.item_title).text = SavedData().getStringSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.NAME)
+        view!!.findViewById<TextView>(R.id.fprofile_name).text = SavedData().getStringSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.NAME)
         view!!.findViewById<TextView>(R.id.mail).text = SavedData().getStringSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.EMAIL)
         view!!.findViewById<TextView>(R.id.tel).text = SavedData().getStringSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.TEL)
     }

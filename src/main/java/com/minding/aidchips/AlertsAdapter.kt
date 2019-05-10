@@ -21,7 +21,7 @@ class AlertsAdapter(private  var alerts: ArrayList<Alert>) : BaseAdapter()
         LayoutInflater.from(parent!!.context).inflate(R.layout.item, parent, false).apply {
 
             findViewById<TextView>(R.id.item_desc).text = alerts[pos].date
-            findViewById<ImageView>(R.id.item_icon).setImageBitmap(alerts[pos].usuario.image)
+            findViewById<ImageView>(R.id.fprofile_image).setImageBitmap(alerts[pos].usuario.image)
 
             if (!alerts[pos].typeOf)
             {
@@ -29,7 +29,7 @@ class AlertsAdapter(private  var alerts: ArrayList<Alert>) : BaseAdapter()
                     layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
                 })
 
-                findViewById<TextView>(R.id.item_title).text = alerts[pos].access
+                findViewById<TextView>(R.id.fprofile_name).text = alerts[pos].access
 
                 val itemAfterTitle= findViewById<TextView>(R.id.item_after_tittle).buildCollapsible()
 
@@ -44,7 +44,7 @@ class AlertsAdapter(private  var alerts: ArrayList<Alert>) : BaseAdapter()
                     layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
                 })
 
-                findViewById<TextView>(R.id.item_title).text = parent.context.getText(R.string.notify_request)
+                findViewById<TextView>(R.id.fprofile_name).text = parent.context.getText(R.string.notify_request)
                 findViewById<TextView>(R.id.item_chip).text = alerts[pos].idChip.toString()
 
                 val itemAfterTitle= findViewById<TextView>(R.id.item_after_tittle).buildCollapsible()

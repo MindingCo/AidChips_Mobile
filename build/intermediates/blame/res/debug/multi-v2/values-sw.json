@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\MindBlast\\Documents\\Programacion\\Escuela\\6to\\PaulaProyectoAula\\AidChips_Mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw\\values-sw.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\42f36a78814b53bfadbc2ffca623054f\\res\\values-sw\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3974",
+                        "endColumns": "204",
+                        "endOffsets": "4174"
+                    }
+                },
+                {
                     "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\c9cb0537759feb301f08b7e602c1d051\\res\\values-sw\\values-sw.xml",
                     "from": {
                         "startLines": "2",
@@ -18,23 +35,6 @@
                         "startOffsets": "5633",
                         "endColumns": "100",
                         "endOffsets": "5729"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\6396dcf0f16ef503ebf59bc71c454ec5\\res\\values-sw\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3974",
-                        "endColumns": "204",
-                        "endOffsets": "4174"
                     }
                 },
                 {

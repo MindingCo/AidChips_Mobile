@@ -3,10 +3,13 @@ package com.minding.aidchips
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import com.minding.aidchips.HomeAdapter.*
 import com.minding.aidchips.ui.home.ClientViewModel
 
 class ReceivedPermissionsFragment : Fragment()
@@ -22,18 +25,29 @@ class ReceivedPermissionsFragment : Fragment()
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(ClientViewModel::class.java)
 
-        val permissions: ArrayList<Permission> = ArrayList()
+        val params : MutableMap<String, String> = HashMap()
+        params["id"] = SavedData().getIntSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID).toString()
 
-//        permissions.Add(Permission(123,1 ,"Gustavo Peduzzi", "5583599322", R.drawable.ic_launcher_background))
-//        permissions.Add(Permission(123,2 ,"Sebastian Ruiz", "5583599322", R.drawable.ic_launcher_background))
-//        permissions.Add(Permission(123,3 ,"Edgar Varillas", "5583599322", R.drawable.ic_launcher_background))
-        permissions.add(Permission(124123,4 ,"Juanki el loco", "5583599322", R.drawable.ic_launcher_background))
-        permissions.add(Permission(124123,5 ,"Gabo Lazaro alv", "5583599322", R.drawable.ic_launcher_background))
-        permissions.add(Permission(124123,6 ,"Gustavo Peduzzi", "5583599322", R.drawable.ic_launcher_background))
-//        permissions.Add(Permission(124123,7 ,"Sebastian Ruiz", "5583599322", R.drawable.ic_launcher_background))
-//        permissions.Add(Permission(124123,8 ,"Edgar Varillas", "5583599322", R.drawable.ic_launcher_background))
-//        permissions.Add(Permission(124123,9 ,"Juanki el loco", "5583599322", R.drawable.ic_launcher_background))
+        DataBase().requestArrayJSON(view!!.context, DataBase.Action.Get.RECEIVEDP, DataBase.Method.POST, params)
+        { chipsJSONArray ->
+            if (chipsJSONArray != null)
+            {
+                val permits: ArrayList<Permit> = ArrayList()
 
-        view!!.findViewById<ListView>(R.id.list_received_permissions).adapter = ReceivedPermissionsAdapter(permissions)
+                var i = 0
+                while (i < chipsJSONArray.length())
+                {
+                    val chip = chipsJSONArray.getJSONObject(i)
+                    permits.add( Permit( chip.getString("nse_chp"), chip.getInt("id_usu"), chip.getString("npr_chp"), chip.getString("cel_chp"),  null) )
+                    i++
+                }
+                view!!.findViewById<ListView>(R.id.list_received_permissions).adapter = ReceivedPermissionsAdapter(permits)
+            }
+            else adviseNoReceivedPermits()
+        }
+    }
+
+    private fun adviseNoReceivedPermits() {
+        view!!.findViewById<RecyclerView>(R.id.home).background = view!!.resources.getDrawable(R.drawable.background_no_received_permits,null)
     }
 }

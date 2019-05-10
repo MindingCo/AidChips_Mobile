@@ -5,7 +5,7 @@
 >
     <Button android:id="@+id/deny_permission"
             android:text="@string/deny_permission"
-            style="@style/Button.Twin"
+            style="@style/Button.Secondary"
             android:layout_marginTop="1dp"
             android:background="@drawable/ic_button_secondary_rounded"
             android:layout_width="0dp" android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
     <Button android:id="@+id/grant_permission"
             android:text="@string/grant_permission"
-            style="@style/Button.Twin"
+            style="@style/Button"
             android:layout_marginTop="1dp"
             android:textColor="@color/bone"
             android:background="@drawable/background_button_positive"

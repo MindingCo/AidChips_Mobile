@@ -40,7 +40,7 @@
     <string name="logout">Log out</string>
     <string name="logout_desc">Close your current session</string>
     <string name="chip_allowed">Allowed Chip:</string>
-    v<string name="chip_requested">Requested Chip:</string>
+    <string name="chip_requested">Requested Chip:</string>
     <string name="revoke_permission">Revoke Permission</string>
     <string name="deny_permission">Deny</string>
     <string name="grant_permission">Grant</string>
@@ -51,4 +51,8 @@
     <string name="problem_wrong_password">Wrong Password</string>
     <string name="notify_request">Solicitud de acceso</string>
     <string name="pre_chip_serial">Chip Serial Number:</string>
+    <string name="add_chip">Add Chip</string>
+    <string name="aidchips_web">AidChips Web</string>
+    <string name="camera_explain">Scan QR code showed from https://aidchips.tk</string>
+    <string name="title_camera">Scan the QR Code</string>
 </resources>

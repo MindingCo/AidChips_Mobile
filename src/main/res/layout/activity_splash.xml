@@ -6,7 +6,7 @@
                                              android:layout_height="match_parent"
                                              android:id="@+id/SplashScreen"
                                              tools:context=".SplashActivity">
-    <ImageView android:id="@+id/logo"
+    <ImageView android:id="@+id/login_logo"
                android:transitionName="logo"
                android:src="@drawable/ic_twitter_bird_logo"
                android:contentDescription="@null"

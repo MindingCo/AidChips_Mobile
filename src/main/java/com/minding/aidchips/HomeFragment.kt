@@ -2,6 +2,7 @@
 package com.minding.aidchips
 
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
@@ -32,21 +33,35 @@ class HomeFragment : Fragment(), OnClickListener
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(ClientViewModel::class.java)
 
-        val chips: ArrayList<Chip> = ArrayList()
-        chips.add(Chip(123, "Gustavo A", "1234567890"))
-        chips.add(Chip(234, "Gustavo Peduzzi", "12367890"))
-        chips.add(Chip(4564, "Patricia Acevedo", "12345671230"))
-        chips.add(Chip(125756, "luis", "123456789123"))
-//        chips.add(Chip(1213, "Gustavo", "123456789asd"))
+        val params : MutableMap<String, String> = HashMap()
+        params["id"] = SavedData().getIntSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID).toString()
+        params["owner"] = "true"
 
-        view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
-        view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
+        DataBase().requestArrayJSON(view!!.context, DataBase.Action.Get.CHIPS, DataBase.Method.POST, params)
+        { chipsJSONArray ->
+            if (chipsJSONArray != null)
+            {
+                val chips: ArrayList<Chip> = ArrayList()
 
-//        view!!.findViewById<Button>(R.id.btnRChipLikeProperty).setOnClickListener(this)
-//        view!!.findViewById<Button>(R.id.btnRChip).setOnClickListener(this)
+                var i = 0
+                while (i < chipsJSONArray.length())
+                {
+                    val chip = chipsJSONArray.getJSONObject(i)
+                    chips.add(Chip(chip.getString("nse_chp"), chip.getString("npr_chp"), chip.getString("cel_chp")))
+                    i++
+                }
+                view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
+                view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
+            }
+            else adviseNoChips()
+        }
     }
 
-//    @SuppressLint("InflateParams", "ResourceAsColor")
+    private fun adviseNoChips() {
+        view!!.findViewById<RecyclerView>(R.id.home).background = view!!.resources.getDrawable(R.drawable.background_no_chips,null)
+    }
+
+    //    @SuppressLint("InflateParams", "ResourceAsColor")
 //    private fun showDialog()
 //    {
 //        val dialogView: View = inflate(context, R.layout.dialog_rchip_nopermission, null)

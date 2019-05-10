@@ -3,27 +3,21 @@ package com.minding.aidchips
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
-import android.support.v4.app.FragmentActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import com.google.android.gms.auth.api.Auth
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.GoogleApiClient
 
 class SettingsAdapter(private  var settings: ArrayList<Settings>) : BaseAdapter()
 {
     @SuppressLint("ViewHolder")
     override fun getView(pos: Int, convertView: View?, parent: ViewGroup?): View =
         LayoutInflater.from(parent!!.context).inflate(R.layout.item, parent, false).apply {
-            findViewById<TextView>(R.id.item_title).text = settings[pos].title
+            findViewById<TextView>(R.id.fprofile_name).text = settings[pos].title
             findViewById<TextView>(R.id.item_desc).text = settings[pos].desc
-            findViewById<ImageView>(R.id.item_icon).setImageResource(settings[pos].icon)
+            findViewById<ImageView>(R.id.fprofile_image).setImageResource(settings[pos].icon)
 
             setOnClickListener {
                 when (settings[pos].id)

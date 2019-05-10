@@ -6,10 +6,12 @@
                                        android:layout_width="match_parent" android:layout_height="match_parent"
                                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     <android.support.design.widget.AppBarLayout android:id="@+id/subBar"
-                                             android:layout_width="match_parent" android:layout_height="wrap_content"
-                                             android:layout_alignParentBottom="true"
-                                             android:theme="@style/ThemeOverlay.AppCompat.Light" >
+                                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:theme="@style/ThemeOverlay.AppCompat.Light">
         <android.support.design.widget.TabLayout android:id="@+id/tabs"
+                                                 app:tabTextColor="?android:attr/textColorPrimaryInverse"
+                                                 app:tabTextAppearance="@style/TextAppearance.AppCompat.Body2"
                                                  android:layout_width="match_parent" android:layout_height="wrap_content"/>
     </android.support.design.widget.AppBarLayout>
 </android.support.design.widget.CoordinatorLayout>

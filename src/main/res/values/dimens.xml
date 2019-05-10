@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="TextTitle">30sp</dimen>
-    <dimen name="TextLittleBig">18sp</dimen>
-    <dimen name="TextNormal">15sp</dimen>
-    <dimen name="TextSmall">12sp</dimen>
+    <dimen name="Text_Display_4"> 112sp </dimen>
+    <dimen name="Text_Display_3"> 56sp  </dimen>
+    <dimen name="Text_Display_2"> 45sp  </dimen>
+    <dimen name="Text_Display">   34sp  </dimen>
+    <dimen name="Text_Headline">  24sp  </dimen>
+    <dimen name="Text_Title">     20sp  </dimen>
+    <dimen name="Text_Subhead">   16sp  </dimen>
+    <dimen name="Text_Body">      14sp  </dimen>
+    <dimen name="Text_Caption">   12sp  </dimen>
+    <dimen name="Text_Button">    14sp  </dimen>
+
     <dimen name="Icon">56dp</dimen>
     <dimen name="IconLittle">40dp</dimen>
     <dimen name="IconBig">72dp</dimen>
-    <dimen name="Margin">24dp</dimen>
-    <dimen name="MarginLittle">18dp</dimen>
     <dimen name="iconLittleRadius">27.5dp</dimen>
     <dimen name="IconReallyBig">125dp</dimen>
+    <dimen name="Margin">24dp</dimen>
+    <dimen name="MarginLittle">18dp</dimen>
     <dimen name="MarginBig">48dp</dimen>
     <dimen name="MarginReallyLittle">12dp</dimen>
     <dimen name="MarginSoReallyLittle">6dp</dimen>

@@ -9,7 +9,7 @@ import com.minding.aidchips.HomeAdapter.*
 
 class HomeAdapter(private  var chips: ArrayList<Chip>) : RecyclerView.Adapter<HomeViewHolder>()
 {
-    class Chip (var nSerial: Int, var name: String, var tel: String)
+    class Chip (var nSerial: String, var name: String, var tel: String)
 
     class HomeViewHolder(view: View): RecyclerView.ViewHolder(view)
     {
@@ -27,7 +27,7 @@ class HomeAdapter(private  var chips: ArrayList<Chip>) : RecyclerView.Adapter<Ho
     override fun onBindViewHolder(holder: HomeViewHolder, pos: Int)
     {
         holder.owner.text = chips[pos].name
-        holder.serial.text = chips[pos].nSerial.toString()
+        holder.serial.text = chips[pos].nSerial
         holder.tel.text = chips[pos].tel
     }
 

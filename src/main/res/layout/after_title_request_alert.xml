@@ -6,20 +6,20 @@
               app:layout_constraintTop_toTopOf="parent"
               app:layout_constraintStart_toStartOf="parent" />
     <TextView android:id="@+id/item_tel"
-              style="@style/Text.Little"
+              style="@style/TextAppearance.AppCompat.Caption"
               android:layout_marginTop="@dimen/MarginReallyLittle"
               android:layout_width="wrap_content" android:layout_height="wrap_content"
               app:layout_constraintStart_toStartOf="parent"
               app:layout_constraintTop_toBottomOf="@id/item_user" />
     <TextView android:id="@+id/pre_Chip_Alert"
               android:text="@string/chip_requested"
-              style="@style/Text.Little"
+              style="@style/TextAppearance.AppCompat.Caption"
               android:layout_marginTop="@dimen/MarginReallyLittle"
               android:layout_width="wrap_content" android:layout_height="wrap_content"
               app:layout_constraintStart_toStartOf="parent"
               app:layout_constraintTop_toBottomOf="@id/item_tel" />
     <TextView android:id="@+id/item_chip"
-              style="@style/Text.Little"
+              style="@style/TextAppearance.AppCompat.Caption"
               android:layout_width="wrap_content" android:layout_height="wrap_content"
               android:layout_marginStart="@dimen/MarginReallyLittle"
               app:layout_constraintStart_toEndOf="@id/pre_Chip_Alert"
