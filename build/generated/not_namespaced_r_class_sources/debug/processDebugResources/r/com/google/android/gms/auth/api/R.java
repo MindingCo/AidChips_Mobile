@@ -66,11 +66,11 @@ public final class R {
         public static final int adjust_width = 0x7f080022;
         public static final int auto = 0x7f08002c;
         public static final int dark = 0x7f080057;
-        public static final int icon_only = 0x7f080094;
-        public static final int light = 0x7f0800a7;
-        public static final int none = 0x7f0800cc;
-        public static final int standard = 0x7f080122;
-        public static final int wide = 0x7f080154;
+        public static final int icon_only = 0x7f080095;
+        public static final int light = 0x7f0800a8;
+        public static final int none = 0x7f0800cd;
+        public static final int standard = 0x7f080123;
+        public static final int wide = 0x7f080155;
     }
     public static final class integer {
         private integer() {}
@@ -80,24 +80,24 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int common_google_play_services_enable_button = 0x7f0e0037;
-        public static final int common_google_play_services_enable_text = 0x7f0e0038;
-        public static final int common_google_play_services_enable_title = 0x7f0e0039;
-        public static final int common_google_play_services_install_button = 0x7f0e003a;
-        public static final int common_google_play_services_install_text = 0x7f0e003b;
-        public static final int common_google_play_services_install_title = 0x7f0e003c;
-        public static final int common_google_play_services_notification_channel_name = 0x7f0e003d;
-        public static final int common_google_play_services_notification_ticker = 0x7f0e003e;
-        public static final int common_google_play_services_unknown_issue = 0x7f0e003f;
-        public static final int common_google_play_services_unsupported_text = 0x7f0e0040;
-        public static final int common_google_play_services_update_button = 0x7f0e0041;
-        public static final int common_google_play_services_update_text = 0x7f0e0042;
-        public static final int common_google_play_services_update_title = 0x7f0e0043;
-        public static final int common_google_play_services_updating_text = 0x7f0e0044;
-        public static final int common_google_play_services_wear_update_text = 0x7f0e0045;
-        public static final int common_open_on_phone = 0x7f0e0046;
-        public static final int common_signin_button_text = 0x7f0e0047;
-        public static final int common_signin_button_text_long = 0x7f0e0048;
+        public static final int common_google_play_services_enable_button = 0x7f0e0038;
+        public static final int common_google_play_services_enable_text = 0x7f0e0039;
+        public static final int common_google_play_services_enable_title = 0x7f0e003a;
+        public static final int common_google_play_services_install_button = 0x7f0e003b;
+        public static final int common_google_play_services_install_text = 0x7f0e003c;
+        public static final int common_google_play_services_install_title = 0x7f0e003d;
+        public static final int common_google_play_services_notification_channel_name = 0x7f0e003e;
+        public static final int common_google_play_services_notification_ticker = 0x7f0e003f;
+        public static final int common_google_play_services_unknown_issue = 0x7f0e0040;
+        public static final int common_google_play_services_unsupported_text = 0x7f0e0041;
+        public static final int common_google_play_services_update_button = 0x7f0e0042;
+        public static final int common_google_play_services_update_text = 0x7f0e0043;
+        public static final int common_google_play_services_update_title = 0x7f0e0044;
+        public static final int common_google_play_services_updating_text = 0x7f0e0045;
+        public static final int common_google_play_services_wear_update_text = 0x7f0e0046;
+        public static final int common_open_on_phone = 0x7f0e0047;
+        public static final int common_signin_button_text = 0x7f0e0048;
+        public static final int common_signin_button_text_long = 0x7f0e0049;
     }
     public static final class styleable {
         private styleable() {}

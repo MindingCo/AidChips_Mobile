@@ -14,13 +14,12 @@ import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.View.OnLongClickListener
 import android.widget.TextView
 import android.widget.Toast
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.Toolbar
 
 
 class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickListener
@@ -34,33 +33,42 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_client)
 
-        if (savedInstanceState == null)
-        {
-            supportFragmentManager.beginTransaction()
-                .add(R.id.client_content, HomeFragment.newInstance())
-                .commit()
-            setTitle(R.string.title_home)
-        }
-            //        Start config to FAB
-        findViewById<FloatingActionButton>(R.id.fab_main).setOnClickListener(this)
-
-        val fabPermissions: FloatingActionButton = findViewById(R.id.fab_permits)
-        val fabProfile: FloatingActionButton = findViewById(R.id.fab_profile)
-        val fabAlerts: FloatingActionButton = findViewById(R.id.fab_alerts)
-
-        fabPermissions.setOnClickListener(this)
-        fabProfile.setOnClickListener(this)
-        fabAlerts.setOnClickListener(this)
-
-        fabPermissions.setOnLongClickListener(this)
-        fabProfile.setOnLongClickListener(this)
-        fabAlerts.setOnLongClickListener(this)
-            //        End config to FAB
-        findViewById<ConstraintLayout>(R.id.curtain).setOnClickListener(this)
+        supportFragmentManager.beginTransaction()
+            .add(R.id.client_content, HomeFragment.newInstance())
+            .commit()
+        setTitle(R.string.title_home)
 
         setToolbar()
+        setFabs()
+        findViewById<ConstraintLayout>(R.id.curtain).setOnClickListener(this)
     }
-    @SuppressLint("RestrictedApi")
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        Toast.makeText(this, "New Intent", Toast.LENGTH_SHORT).show()
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean
+    {
+        menuInflater.inflate(R.menu.menu_home, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean
+    {
+        when (item.itemId)
+        {
+            R.id.menu_add_chip ->
+            {
+                startActivity(Intent(this, ReadingActivity::class.java))
+                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
+            }
+            R.id.menu_aidchips_web ->
+            {
+                startActivity(Intent(this, CameraActivity::class.java))
+                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
     override fun onClick(v: View)
     {
         when (v.id)
@@ -263,29 +271,20 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         backBtn.setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_material)
         toolbar.setNavigationOnClickListener { onBackPressed() }
     }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean
+    private fun setFabs()
     {
-        menuInflater.inflate(R.menu.menu_home, menu)
-        return true
-    }
+        findViewById<FloatingActionButton>(R.id.fab_main).setOnClickListener(this)
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean
-    {
-        when (item.itemId)
-        {
-            R.id.menu_add_chip ->
-            {
-                Toast.makeText(this@ClientActivity, "Action clicked", Toast.LENGTH_SHORT).show()
-                return true
-            }
-            R.id.menu_aidchips_web ->
-            {
-                startActivity(Intent(this, CameraActivity::class.java))
-                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
-                finish()
-            }
-        }
-        return super.onOptionsItemSelected(item)
+        val fabPermissions: FloatingActionButton = findViewById(R.id.fab_permits)
+        val fabProfile: FloatingActionButton = findViewById(R.id.fab_profile)
+        val fabAlerts: FloatingActionButton = findViewById(R.id.fab_alerts)
+
+        fabPermissions.setOnClickListener(this)
+        fabProfile.setOnClickListener(this)
+        fabAlerts.setOnClickListener(this)
+
+        fabPermissions.setOnLongClickListener(this)
+        fabProfile.setOnLongClickListener(this)
+        fabAlerts.setOnLongClickListener(this)
     }
 }

@@ -3,9 +3,9 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.minding.aidchips">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-feature
             android:name="android.hardware.nfc"
@@ -28,11 +28,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ReadingActivity"
-                  android:launchMode="standard" >
+                  android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
-                <data android:mimeType="application/vnd.name.nfcdemo" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>

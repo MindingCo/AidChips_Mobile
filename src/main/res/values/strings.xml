@@ -55,4 +55,5 @@
     <string name="aidchips_web">AidChips Web</string>
     <string name="camera_explain">Scan QR code showed from https://aidchips.tk</string>
     <string name="title_camera">Scan the QR Code</string>
+    <string name="bring_chip">Bring chip closer</string>
 </resources>

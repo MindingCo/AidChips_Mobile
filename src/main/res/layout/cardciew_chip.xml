@@ -9,7 +9,7 @@
         <ImageButton android:id="@+id/cardview_btn_delete"
                      app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
                      android:layout_width="wrap_content" android:layout_height="wrap_content"
-                     android:src="@android:drawable/ic_menu_close_clear_cancel" android:background="@null"
+                     android:src="@drawable/abc_ic_clear_material" android:background="@null"
                      android:contentDescription="@null"/>
         <TextView android:id="@+id/cardview_owner"
                   style="@style/TextAppearance.AppCompat.Title"

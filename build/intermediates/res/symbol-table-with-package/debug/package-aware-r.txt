@@ -1362,6 +1362,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dialog_add_headline
 id dimensions
 id direct
 id disableHome
@@ -1681,6 +1682,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_add_chip
 layout dialog_rchip_nopermission
 layout extra_given_permission
 layout extra_request_alert
@@ -1765,6 +1767,7 @@ string aidchips_web
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string bring_chip
 string camera_explain
 string character_counter_content_description
 string character_counter_pattern
@@ -2456,3 +2459,4 @@ styleable Variant constraints region_heightLessThan region_heightMoreThan region
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml nfc_tech_filter
