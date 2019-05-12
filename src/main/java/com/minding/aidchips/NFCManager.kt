@@ -11,7 +11,6 @@ import android.nfc.NfcAdapter
 import android.nfc.Tag
 import android.nfc.tech.Ndef
 import android.nfc.tech.NdefFormatable
-import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import java.io.ByteArrayOutputStream
@@ -26,16 +25,19 @@ class NFCManager(context: Context)
     fun isNfcIntent(intent: Intent): Boolean =
         intent.hasExtra(NfcAdapter.EXTRA_TAG)
 
-    fun read(intent: Intent, ctx: Context){
+    fun tryRead(intent: Intent, ctx: Context): String?
+    {
         val parcelables = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)
-        if (parcelables != null && parcelables.isNotEmpty()) {
-            readTextFromMessage(parcelables[0] as NdefMessage, ctx)
-        } else
-            Toast.makeText(ctx, "No NDEF messages found!", Toast.LENGTH_SHORT).show()
+        if (!parcelables.isNullOrEmpty()) {
+            return  readTextFromMessage(parcelables[0] as NdefMessage)
+        }
+//        else
+        return null
+//            Toast.makeText(ctx, "No NDEF messages found!", Toast.LENGTH_SHORT).show()
     }
-    fun write(intent: Intent, message: String, ctx: Context) =
+    fun write(intent: Intent, message: String, ctx: Context): Boolean =
         writeNdefMessage(
-            intent.getParcelableExtra<Tag>(NfcAdapter.EXTRA_TAG),
+            intent.getParcelableExtra(NfcAdapter.EXTRA_TAG),
             createNdefMessage(message),
             ctx)
     fun getNSerial(intent: Intent): String
@@ -51,18 +53,15 @@ class NFCManager(context: Context)
         return decodeId
     }
 
-    private fun readTextFromMessage(ndefMessage: NdefMessage, ctx: Context) {
+    private fun readTextFromMessage(ndefMessage: NdefMessage): String?
+    {
         val ndefRecords = ndefMessage.records
 
-        if (ndefRecords != null && ndefRecords.isNotEmpty()) {
-
-            val ndefRecord = ndefRecords[0]
-
-            val tagContent = getTextFromNdefRecord(ndefRecord)
-
-            Toast.makeText(ctx, tagContent, Toast.LENGTH_SHORT).show()
-        } else
-            Toast.makeText(ctx, "No NDEF records found!", Toast.LENGTH_SHORT).show()
+        if (!ndefRecords.isNullOrEmpty())
+            return  getTextFromNdefRecord(ndefRecords[0])
+//        else
+        return null
+//            Toast.makeText(ctx, "No NDEF records found!", Toast.LENGTH_SHORT).show()
     }
 
     fun enableForegroundDispatchSystem(ctx: Context, act: Activity, cla: Class<*>) {
@@ -77,12 +76,12 @@ class NFCManager(context: Context)
     fun disableForegroundDispatchSystem(act: Activity) =
         nfcAdapter.disableForegroundDispatch(act)
 
-    private fun formatTag(tag: Tag, ndefMessage: NdefMessage, ctx: Context) {
+    fun formatTag(tag: Tag, ndefMessage: NdefMessage, ctx: Context): Boolean {
         try {
             val ndefFormatable = NdefFormatable.get(tag)
             if (ndefFormatable == null) {
                 Toast.makeText(ctx, "Tag is not ndef formatable!", Toast.LENGTH_LONG).show()
-                return
+                return false
             }
 
             ndefFormatable.connect()
@@ -90,41 +89,48 @@ class NFCManager(context: Context)
             ndefFormatable.close()
 
             Toast.makeText(ctx, "Tag written!", Toast.LENGTH_SHORT).show()
+            return true
         } catch (e: Exception) {
-            Log.e("formatTag", e.message)
+            Log.e("formatTag", e.toString())
         }
-
+        return false
     }
 
-    private fun writeNdefMessage(tag: Tag?, ndefMessage: NdefMessage, ctx: Context) {
-        try {
-            if (tag == null) {
+    private fun writeNdefMessage(tag: Tag?, ndefMessage: NdefMessage, ctx: Context): Boolean
+    {
+        try
+        {
+            if (tag == null)
+            {
                 Toast.makeText(ctx, "Tag object cannot be null!", Toast.LENGTH_SHORT).show()
-                return
+                return false
             }
 
             val ndef = Ndef.get(tag)
 
-            if (ndef == null) {
+            if (ndef == null)
                 // format tag with the ndef format and writes the message
                 formatTag(tag, ndefMessage, ctx)
-            } else {
+            else
+            {
                 ndef.connect()
-                if (!ndef.isWritable) {
+                if (!ndef.isWritable)
+                {
                     Toast.makeText(ctx, "Tag is not writable!", Toast.LENGTH_SHORT).show()
                     ndef.close()
-                    return
+                    return false
                 }
 
                 ndef.writeNdefMessage(ndefMessage)
                 ndef.close()
 
                 Toast.makeText(ctx, "Tag written!", Toast.LENGTH_SHORT).show()
+                return true
             }
         } catch (e: Exception) {
-            Log.e("writeNefdMessage", e.message)
+            Log.e("writeNefdMessage", e.toString())
         }
-
+        return false
     }
 
     private fun createTextRecord(content: String): NdefRecord? {
@@ -147,11 +153,8 @@ class NFCManager(context: Context)
         return null
     }
 
-    private fun createNdefMessage(content: String): NdefMessage
-    {
-        val ndefRecord = createTextRecord(content)
-        return NdefMessage(arrayOf(ndefRecord!!))
-    }
+    fun createNdefMessage(content: String): NdefMessage =
+        NdefMessage(arrayOf(createTextRecord(content)!!))
 
     fun getTextFromNdefRecord(ndefRecord: NdefRecord): String?
     {

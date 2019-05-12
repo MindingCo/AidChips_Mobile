@@ -19,8 +19,7 @@ class DataBase {
                 val USER = "/add/user"
                 val CHIP = "/add/chip"
                 val ALERT = "/add/alert"
-                val GIVENP = "/add/Permit"
-                val RECEIVEDP = "/add/ReceivedPermission"
+                val PERMIT = "/add/permit"
             }
         }
 

@@ -35,19 +35,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.minding.aidchips.ClientActivity"
+            android:launchMode="singleTask" />
+        <activity
             android:name="com.minding.aidchips.ReadingActivity"
             android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="text/plain" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.nfc.action.NDEF_DISCOVERED" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <data android:mimeType="text/plain" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name="com.minding.aidchips.LoginActivity" />
         <activity android:name="com.minding.aidchips.SigninActivity" />
-        <activity android:name="com.minding.aidchips.ClientActivity" />
         <activity android:name="com.minding.aidchips.SettingsActivity" />
         <activity android:name="com.minding.aidchips.CameraActivity" />
         <activity

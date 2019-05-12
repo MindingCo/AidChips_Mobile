@@ -7,10 +7,12 @@
     <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
                                                  android:layout_height="match_parent">
         <ImageButton android:id="@+id/cardview_btn_delete"
-                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                     android:src="@drawable/abc_ic_clear_material"
+                     android:background="@null"
+                     android:contentDescription="@null"
                      android:layout_width="wrap_content" android:layout_height="wrap_content"
-                     android:src="@drawable/abc_ic_clear_material" android:background="@null"
-                     android:contentDescription="@null"/>
+                     android:layout_margin="@dimen/MarginSoReallyLittle"
+                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
         <TextView android:id="@+id/cardview_owner"
                   style="@style/TextAppearance.AppCompat.Title"
                   android:maxLines="1"

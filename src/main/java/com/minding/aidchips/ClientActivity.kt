@@ -4,7 +4,10 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.app.Dialog
 import android.content.Intent
+import android.nfc.NfcAdapter
 import android.os.Bundle
 import android.support.animation.DynamicAnimation
 import android.support.animation.SpringAnimation
@@ -14,12 +17,14 @@ import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
+import android.view.ContextThemeWrapper
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.View.OnLongClickListener
-import android.widget.TextView
-import android.widget.Toast
+import android.view.View.inflate
+import android.widget.*
+import org.json.JSONObject
 
 
 class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickListener
@@ -27,6 +32,13 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     private val timeOut: Long = 200
     lateinit var backBtn : ActionBar
     lateinit var toolbar: android.support.v7.widget.Toolbar
+
+    private lateinit var dialog: Dialog
+    private lateinit var dialogPropierty: EditText
+    private lateinit var dialogTel: EditText
+    private lateinit var dialogSerial: TextView
+
+    private lateinit var nfcManager: NFCManager
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -38,14 +50,63 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
             .commit()
         setTitle(R.string.title_home)
 
-        setToolbar()
-        setFabs()
+        setupToolbar()
+        setupFabs()
+        setupDialog()
+        nfcManager = NFCManager(this)
+
+        if (!nfcManager.nfcAdapter.isEnabled)
+            Toast.makeText(this, "NFC not available", Toast.LENGTH_LONG).show()
+
         findViewById<ConstraintLayout>(R.id.curtain).setOnClickListener(this)
     }
 
-    override fun onNewIntent(intent: Intent) {
+    override fun onResume() {
+        super.onResume()
+        nfcManager.enableForegroundDispatchSystem(this, this, ClientActivity::class.java)
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        nfcManager.disableForegroundDispatchSystem(this)
+    }
+
+    override fun onNewIntent(intent: Intent)
+    {
         super.onNewIntent(intent)
-        Toast.makeText(this, "New Intent", Toast.LENGTH_SHORT).show()
+        if (nfcManager.isNfcIntent(intent) && dialog.isShowing)
+        {
+            if (dialogPropierty.text.toString().isNotBlank()  && dialogTel.text.toString().isNotBlank())
+            {
+                val basicStructure = JSONObject(
+                    """{
+                                "propietary": {
+                                    "name": "${dialogPropierty.text}",
+                                    "tel": "${dialogTel.text}"
+                                },
+                                "contact data": {
+
+                                },
+                                "emergency data": {
+
+                                },
+                                "personal data": {
+
+                                },
+                                "files":{
+
+                                }
+                            }"""
+                )
+                println(basicStructure.toString())
+
+                nfcManager.write(intent, basicStructure.toString(), this)
+                dialogSerial.text = nfcManager.getNSerial(intent)
+            }
+            else
+                Toast.makeText(this, "Debes llenar ambos campos primero", Toast.LENGTH_SHORT).show()
+        }
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean
     {
@@ -58,8 +119,9 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         {
             R.id.menu_add_chip ->
             {
-                startActivity(Intent(this, ReadingActivity::class.java))
-                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
+                dialog.show()
+//                startActivity(Intent(this, ReadingActivity::class.java))
+//                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
             }
             R.id.menu_aidchips_web ->
             {
@@ -79,7 +141,6 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
                 if (findViewById<FloatingActionButton>(R.id.fab_permits).visibility == View.VISIBLE)
                 {
                     setTitle(R.string.title_home)
-                    toolbar.inflateMenu(R.menu.menu_home)
                     if (supportFragmentManager.backStackEntryCount > 0)
                         onBackPressed()
                     hideMenu()
@@ -113,6 +174,75 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
             }
 //            End config to FAB
             R.id.curtain -> hideMenu()
+//            config dialog
+            R.id.closeDialog -> dialog.dismiss()
+            R.id.dialog_add_btn_add ->
+            {
+                if (dialogPropierty.text.toString().isNotBlank()  && dialogTel.text.toString().isNotBlank() && dialogSerial.text.isNotBlank())
+                {
+                    val params : MutableMap<String, String> = HashMap()
+                    params["nserie"] = dialogSerial.text.toString()
+                    params["ownName"] = dialogPropierty.text.toString()
+                    params["tel"] = dialogTel.text.toString()
+                    DataBase().requestOperation(this, DataBase.Action.Add.CHIP, DataBase.Method.POST, params)
+                    { result ->
+                        when (result)
+                        {
+                            true ->
+                            {
+                                val paramsa : MutableMap<String, String> = HashMap()
+                                paramsa["id"] = SavedData().getIntSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID).toString()
+                                paramsa["nserie"] = dialogSerial.text.toString()
+                                paramsa["owner"] = "true"
+
+                                DataBase().requestOperation(this, DataBase.Action.Add.PERMIT, DataBase.Method.POST, paramsa)
+                                { result ->
+                                    when (result)
+                                    {
+                                        true ->
+                                        {
+                                            Toast.makeText(this, "Tarjeta Añadida", Toast.LENGTH_SHORT).show()
+                                            dialog.dismiss()
+                                        }
+                                        false -> {
+                                            Toast.makeText(this, "El chip ya ha sido registradoa otro dueño", Toast.LENGTH_SHORT).show()
+                                        }
+                                        null -> Toast.makeText(this, "Problema en conexcion con el servidor", Toast.LENGTH_SHORT).show()
+                                    }
+                                }
+                            }
+                            false ->
+                            {
+                                Toast.makeText(this, "El chip ya habia registrado previamente", Toast.LENGTH_SHORT).show()
+                                val paramsa : MutableMap<String, String> = HashMap()
+                                paramsa["id"] = SavedData().getIntSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID).toString()
+                                paramsa["nserie"] = dialogSerial.text.toString()
+                                paramsa["owner"] = "true"
+
+                                DataBase().requestOperation(this, DataBase.Action.Add.PERMIT, DataBase.Method.POST, paramsa)
+                                { result ->
+                                    when (result)
+                                    {
+                                        true ->
+                                        {
+                                            Toast.makeText(this, "Tarjeta Añadida", Toast.LENGTH_SHORT).show()
+                                            dialog.dismiss()
+                                        }
+                                        false -> {
+                                            Toast.makeText(this, "El chip ya ha sido registrado con un dueño", Toast.LENGTH_SHORT).show()
+                                        }
+                                        null -> Toast.makeText(this, "Problema en conexcion con el servidor", Toast.LENGTH_SHORT).show()
+                                    }
+                                }
+                            }
+                            null -> Toast.makeText(this, "Problema en conexcion con el servidor", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+                else
+                    Toast.makeText(this, "Debes llenar ambos campos primero y luego acercar el chip a registrar", Toast.LENGTH_LONG).show()
+            }
+//            End config dialog
         }
     }
     override fun onLongClick(v: View): Boolean
@@ -131,6 +261,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
     {
         setTitle(R.string.title_home)
         backBtn.setDisplayHomeAsUpEnabled(false)
+        toolbar.inflateMenu(R.menu.menu_home)
         if (supportFragmentManager.backStackEntryCount > 1)
             supportFragmentManager.popBackStack(0,0)
         super.onBackPressed()
@@ -263,7 +394,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         }
     }
     @SuppressLint("PrivateResource")
-    private fun setToolbar()
+    private fun setupToolbar()
     {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -271,7 +402,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         backBtn.setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_material)
         toolbar.setNavigationOnClickListener { onBackPressed() }
     }
-    private fun setFabs()
+    private fun setupFabs()
     {
         findViewById<FloatingActionButton>(R.id.fab_main).setOnClickListener(this)
 
@@ -286,5 +417,21 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         fabPermissions.setOnLongClickListener(this)
         fabProfile.setOnLongClickListener(this)
         fabAlerts.setOnLongClickListener(this)
+    }
+        private fun setupDialog()
+    {
+        val dialogView: View = inflate(this, R.layout.dialog_add_chip, null)
+
+        dialogView.findViewById<ImageButton>(R.id.closeDialog).setOnClickListener(this)
+        dialogView.findViewById<Button>(R.id.dialog_add_btn_add).setOnClickListener(this)
+
+        dialogPropierty = dialogView.findViewById(R.id.dialog_add_field_propierty)
+        dialogTel = dialogView.findViewById(R.id.dialog_add_field_tel)
+        dialogSerial = dialogView.findViewById(R.id.dialog_add_serial)
+
+        val ctw = ContextThemeWrapper(this, R.style.Main)
+        val builder = AlertDialog.Builder(ctw)
+        builder.setView(dialogView)
+        dialog = builder.create()
     }
 }

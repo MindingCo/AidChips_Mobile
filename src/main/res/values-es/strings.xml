@@ -56,4 +56,6 @@
     <string name="camera_explain">Escanea el codigo mostrado en https://aidchips.tk</string>
     <string name="title_camera">Escanea el codigo</string>
     <string name="bring_chip">Acerca el chip</string>
+    <string name="dialog_add_headline">Registra los datos del chip</string>
+    <string name="field_propierty">Propietario</string>
 </resources>

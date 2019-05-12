@@ -56,4 +56,6 @@
     <string name="camera_explain">Scan QR code showed from https://aidchips.tk</string>
     <string name="title_camera">Scan the QR Code</string>
     <string name="bring_chip">Bring chip closer</string>
+    <string name="dialog_add_headline">Registra los datos del chip</string>
+    <string name="field_propierty">Propietario</string>
 </resources>
