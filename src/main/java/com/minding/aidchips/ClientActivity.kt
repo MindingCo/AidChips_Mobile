@@ -7,7 +7,6 @@ import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
-import android.nfc.NfcAdapter
 import android.os.Bundle
 import android.support.animation.DynamicAnimation
 import android.support.animation.SpringAnimation
@@ -81,23 +80,30 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
             {
                 val basicStructure = JSONObject(
                     """{
-                                "propietary": {
-                                    "name": "${dialogPropierty.text}",
-                                    "tel": "${dialogTel.text}"
-                                },
-                                "contact data": {
+    "propietary": {
+        "name": "${dialogPropierty.text}",
+        "tel": "${dialogTel.text}"
+    },
+    "contact data": {
+        "full name":"",
+        "address":"",
+        "health insurance":"",
+        "blood": "",
+        "allergies":"",
+        "medicines":"",
+        "donor":"",
+        "medial notes":""
+    },
+    "emergency data": {
 
-                                },
-                                "emergency data": {
+    },
+    "personal data": {
 
-                                },
-                                "personal data": {
+    },
+    "files":{
 
-                                },
-                                "files":{
-
-                                }
-                            }"""
+    }
+}"""
                 )
                 println(basicStructure.toString())
 
@@ -126,6 +132,11 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
             R.id.menu_aidchips_web ->
             {
                 startActivity(Intent(this, CameraActivity::class.java))
+                overridePendingTransition(R.anim.fade_in, R.anim.nothing)
+            }
+            R.id.menu_add_data ->
+            {
+                startActivity(Intent(this, WritingActivity::class.java))
                 overridePendingTransition(R.anim.fade_in, R.anim.nothing)
             }
         }
@@ -196,13 +207,12 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
                                 paramsa["owner"] = "true"
 
                                 DataBase().requestOperation(this, DataBase.Action.Add.PERMIT, DataBase.Method.POST, paramsa)
-                                { result ->
-                                    when (result)
+                                { result1 ->
+                                    when (result1)
                                     {
                                         true ->
                                         {
                                             Toast.makeText(this, "Tarjeta Añadida", Toast.LENGTH_SHORT).show()
-                                            dialog.dismiss()
                                         }
                                         false -> {
                                             Toast.makeText(this, "El chip ya ha sido registradoa otro dueño", Toast.LENGTH_SHORT).show()
@@ -220,8 +230,8 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
                                 paramsa["owner"] = "true"
 
                                 DataBase().requestOperation(this, DataBase.Action.Add.PERMIT, DataBase.Method.POST, paramsa)
-                                { result ->
-                                    when (result)
+                                { result2 ->
+                                    when (result2)
                                     {
                                         true ->
                                         {
@@ -237,6 +247,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
                             }
                             null -> Toast.makeText(this, "Problema en conexcion con el servidor", Toast.LENGTH_SHORT).show()
                         }
+                        dialog.dismiss()
                     }
                 }
                 else
@@ -418,7 +429,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         fabProfile.setOnLongClickListener(this)
         fabAlerts.setOnLongClickListener(this)
     }
-        private fun setupDialog()
+    private fun setupDialog()
     {
         val dialogView: View = inflate(this, R.layout.dialog_add_chip, null)
 

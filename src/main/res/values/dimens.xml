@@ -21,4 +21,5 @@
     <dimen name="MarginBig">48dp</dimen>
     <dimen name="MarginReallyLittle">12dp</dimen>
     <dimen name="MarginSoReallyLittle">6dp</dimen>
+    <dimen name="size_background_icon">250dp</dimen>
 </resources>

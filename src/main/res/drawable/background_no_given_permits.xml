@@ -4,7 +4,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
             android:opacity="opaque" tools:ignore="MissingDefaultResource" tools:targetApi="m">
     <item android:drawable="@drawable/no_given_permits"
-          android:width="250dp"
-          android:height="250dp"
+          android:width="@dimen/size_background_icon"
+          android:height="@dimen/size_background_icon"
           android:gravity="center" />
 </layer-list>

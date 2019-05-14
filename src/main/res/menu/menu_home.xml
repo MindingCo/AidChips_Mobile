@@ -5,6 +5,9 @@
     <item android:id="@+id/menu_add_chip"
           android:title="@string/add_chip"
           app:showAsAction="never"/>
+    <item android:id="@+id/menu_add_data"
+          android:title="@string/add_data"
+          app:showAsAction="never"/>
     <item android:id="@+id/menu_aidchips_web"
           android:title="@string/aidchips_web"
           app:showAsAction="never"/>

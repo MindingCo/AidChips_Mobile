@@ -21,7 +21,8 @@ class ReceivedPermissionsAdapter(private  var permits: ArrayList<Permit>) : Base
             })
             findViewById<TextView>(R.id.fprofile_name).text = permits[pos].name
             findViewById<TextView>(R.id.item_tel).text = permits[pos].tel
-            findViewById<ImageView>(R.id.fprofile_image).setImageResource(permits[pos].image!!)
+            if (permits[pos].image != null)
+                findViewById<ImageView>(R.id.fprofile_image).setImageResource(permits[pos].image!!)
             findViewById<TextView>(R.id.item_chip).text = permits[pos].nSerie
 
             val itemAfterTitle= findViewById<TextView>(R.id.item_after_tittle).buildCollapsible()

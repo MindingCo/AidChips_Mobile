@@ -50,33 +50,22 @@ class HomeFragment : Fragment(), OnClickListener
                     chips.add(Chip(chip.getString("nse_chp"), chip.getString("npr_chp"), chip.getString("cel_chp")))
                     i++
                 }
+                chips.add(Chip("AAA003", "Patricia", "12312312"))
                 view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
                 view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
             }
             else adviseNoChips()
         }
+        val chips: ArrayList<Chip> = ArrayList()
+        chips.add(Chip("AAA003", "Patricia", "12312312"))
+        view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
+        view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
     }
 
     private fun adviseNoChips() {
         view!!.findViewById<RecyclerView>(R.id.home).background = view!!.resources.getDrawable(R.drawable.background_no_chips,null)
     }
 
-    //    @SuppressLint("InflateParams", "ResourceAsColor")
-//    private fun showDialog()
-//    {
-//        val dialogView: View = inflate(context, R.layout.dialog_rchip_nopermission, null)
-//
-//        dialogView.findViewById<ImageButton>(R.id.closeDialog).setOnClickListener(this)
-//        dialogView.findViewById<Button>(R.id.btn_request_permission).setOnClickListener(this)
-//        dialogView.findViewById<Button>(R.id.btn_emergency).setOnClickListener(this)
-//
-//        val ctw = ContextThemeWrapper(context, R.style.Main)
-//        val builder = AlertDialog.Builder(ctw)
-//        builder.setView(dialogView)
-//        dialog = builder.create()
-//
-//        dialog.show()
-//    }
     override fun onClick(v: View) =
         when (v.id)
         {

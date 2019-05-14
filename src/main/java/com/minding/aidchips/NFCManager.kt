@@ -25,14 +25,13 @@ class NFCManager(context: Context)
     fun isNfcIntent(intent: Intent): Boolean =
         intent.hasExtra(NfcAdapter.EXTRA_TAG)
 
-    fun tryRead(intent: Intent, ctx: Context): String?
+    fun read(intent: Intent): String?
     {
         val parcelables = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)
-        if (!parcelables.isNullOrEmpty()) {
-            return  readTextFromMessage(parcelables[0] as NdefMessage)
-        }
-//        else
-        return null
+        return if (!parcelables.isNullOrEmpty())
+            readTextFromMessage(parcelables[0] as NdefMessage)
+        else
+            null
 //            Toast.makeText(ctx, "No NDEF messages found!", Toast.LENGTH_SHORT).show()
     }
     fun write(intent: Intent, message: String, ctx: Context): Boolean =
@@ -57,10 +56,10 @@ class NFCManager(context: Context)
     {
         val ndefRecords = ndefMessage.records
 
-        if (!ndefRecords.isNullOrEmpty())
-            return  getTextFromNdefRecord(ndefRecords[0])
-//        else
-        return null
+        return if (!ndefRecords.isNullOrEmpty())
+            getTextFromNdefRecord(ndefRecords[0])
+        else
+            null
 //            Toast.makeText(ctx, "No NDEF records found!", Toast.LENGTH_SHORT).show()
     }
 
@@ -129,6 +128,7 @@ class NFCManager(context: Context)
             }
         } catch (e: Exception) {
             Log.e("writeNefdMessage", e.toString())
+            Toast.makeText(ctx, "No Despegues el chip", Toast.LENGTH_SHORT).show()
         }
         return false
     }
@@ -159,12 +159,14 @@ class NFCManager(context: Context)
     fun getTextFromNdefRecord(ndefRecord: NdefRecord): String?
     {
         var tagContent: String? = null
-        try {
+        try
+        {
             val payload = ndefRecord.payload
             val textEncoding = if (payload[0] and 128.toByte() == 0.toByte()) "UTF-8" else "UTF16"
             val languageSize = payload[0] and 51
             tagContent = String(payload, languageSize + 1, payload.size - languageSize - 1, charset(textEncoding))
-        } catch (e: UnsupportedEncodingException) {
+        }
+        catch (e: UnsupportedEncodingException) {
             Log.e("getTextFromNdefRecord", e.message, e)
         }
 

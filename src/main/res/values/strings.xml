@@ -57,5 +57,29 @@
     <string name="title_camera">Scan the QR Code</string>
     <string name="bring_chip">Bring chip closer</string>
     <string name="dialog_add_headline">Registra los datos del chip</string>
-    <string name="field_propierty">Propietario</string>
+    <string name="field_propierty">Propiaetario</string>
+    <string name="read_data">Reading Data</string>
+    <string name="add_data">Add Data</string>
+    <string name="field_fullname">Full name</string>
+    <string name="field_blood">Tipo de Sangre</string>
+    <string name="field_address">Address</string>
+    <string name="field_allergies">Allergies</string>
+    <string name="field_medicines">Medicines</string>
+    <string name="field_healthInsurance">Health Insurance</string>
+    <string name="field_donor">Donor</string>
+    <string name="field_medicalNotes">Medical Notes</string>
+    <string-array name="yesornot">
+        <item>Not</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="typeOfBlood">
+        <item>+A</item>
+        <item>-A</item>
+        <item>+B</item>
+        <item>-B</item>
+        <item>+AB</item>
+        <item>-AB</item>
+        <item>+O</item>
+        <item>-O</item>
+    </string-array>
 </resources>

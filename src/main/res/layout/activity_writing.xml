@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent" android:layout_height="match_parent"
+                                                 android:id="@+id/writing_layout"
+                                                 tools:targetApi="o"
+                                                 tools:context=".WritingActivity">
+    <android.support.constraint.ConstraintLayout android:id="@+id/writing_container"
+                                                 android:layout_width="match_parent"  android:layout_height="match_parent"
+                                                 android:visibility="gone"
+                                                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.design.card.MaterialCardView android:id="@+id/writing_propiertyData"
+                                                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                      app:contentPadding="@dimen/MarginReallyLittle"
+                                                      app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" >
+            <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content">
+                <TextView android:id="@+id/writing_field_propierty"
+                          style="@style/TextAppearance.AppCompat.Headline"
+                          android:hint="@string/field_propierty"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:id="@+id/writing_field_tel"
+                          style="@style/TextAppearance.AppCompat.Subhead"
+                          android:hint="@string/field_tel"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toBottomOf="@+id/writing_field_propierty"/>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView android:id="@+id/writing_contactData"
+                                                      style="@style/Widget.MaterialComponents.CardView"
+                                                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                      app:contentPadding="@dimen/MarginReallyLittle"  android:layout_marginTop="@dimen/MarginReallyLittle"
+                                                      app:layout_constraintTop_toBottomOf="@+id/writing_propiertyData">
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView android:id="@+id/writing_emergencyData"
+                                                      style="@style/Widget.MaterialComponents.CardView"
+                                                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                      app:contentPadding="@dimen/MarginReallyLittle"  android:layout_marginTop="@dimen/MarginReallyLittle"
+                                                      app:layout_constraintTop_toBottomOf="@+id/writing_contactData">
+            <android.support.constraint.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/writing_name"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_fullname"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <EditText android:id="@+id/writing_field_name"
+                          android:inputType="textPersonName"
+                          android:autofillHints="@string/field_name" android:hint="@string/field_name"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/MarginSoReallyLittle"
+                          app:layout_constraintStart_toEndOf="@+id/writing_name" app:layout_constraintBaseline_toBaselineOf="@id/writing_name"/>
+                <TextView android:id="@+id/writing_address"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_address"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_name"
+                          app:layout_constraintTop_toBottomOf="@id/writing_name"/>
+                <EditText android:id="@+id/writing_field_address"
+                          android:inputType="textPostalAddress"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/MarginSoReallyLittle"
+                          app:layout_constraintStart_toEndOf="@+id/writing_address" app:layout_constraintBaseline_toBaselineOf="@id/writing_address"/>
+                <TextView android:id="@+id/writing_healthInsurance"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_healthInsurance"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_address"
+                          app:layout_constraintTop_toBottomOf="@id/writing_address"/>
+                <EditText android:id="@+id/writing_field_healthInsurance"
+                          android:inputType="text"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/MarginSoReallyLittle"
+                          app:layout_constraintStart_toEndOf="@+id/writing_healthInsurance" app:layout_constraintBaseline_toBaselineOf="@id/writing_healthInsurance"/>
+                <TextView android:id="@+id/writing_blood"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_blood"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_healthInsurance"
+                          app:layout_constraintTop_toBottomOf="@id/writing_healthInsurance"/>
+                <Spinner android:id="@+id/writing_field_blood"
+                         style="@style/Widget.AppCompat.Spinner.DropDown"
+                         android:entries="@array/typeOfBlood"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/MarginSoReallyLittle"
+                         app:layout_constraintStart_toEndOf="@+id/writing_blood" app:layout_constraintBaseline_toBaselineOf="@id/writing_blood"/>
+                <TextView android:id="@+id/writing_allergies"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_allergies"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_blood"
+                          app:layout_constraintTop_toBottomOf="@id/writing_blood"/>
+                <EditText android:id="@+id/writing_field_allergies"
+                          android:inputType="text"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/MarginSoReallyLittle"
+                          app:layout_constraintStart_toEndOf="@+id/writing_allergies" app:layout_constraintBaseline_toBaselineOf="@id/writing_allergies"/>
+                <TextView android:id="@+id/writing_medicines"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_medicines"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_allergies"
+                          app:layout_constraintTop_toBottomOf="@id/writing_allergies"/>
+                <EditText android:id="@+id/writing_field_medicines"
+                          android:inputType="text"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/MarginSoReallyLittle"
+                          app:layout_constraintStart_toEndOf="@+id/writing_medicines" app:layout_constraintBaseline_toBaselineOf="@id/writing_medicines"/>
+                <TextView android:id="@+id/writing_donor"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_donor"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_medicines"
+                          app:layout_constraintTop_toBottomOf="@id/writing_medicines"/>
+                <Spinner android:id="@+id/writing_field_donor"
+                         style="@style/Widget.AppCompat.Spinner.DropDown"
+                         android:entries="@array/yesornot"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/MarginSoReallyLittle"
+                         app:layout_constraintStart_toEndOf="@+id/writing_donor" app:layout_constraintBaseline_toBaselineOf="@id/writing_donor"/>
+                <TextView android:id="@+id/writing_medicalNotes"
+                          style="@style/TextAppearance.AppCompat.Title"
+                          android:text="@string/field_medicalNotes"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/MarginLittle"
+                          app:layout_constraintStart_toStartOf="@+id/writing_donor"
+                          app:layout_constraintTop_toBottomOf="@id/writing_donor"/>
+                <EditText android:id="@+id/writing_field_medicalNotes"
+                          android:inputType="textMultiLine"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/MarginSoReallyLittle"
+                          app:layout_constraintStart_toEndOf="@+id/writing_medicalNotes" app:layout_constraintBaseline_toBaselineOf="@id/writing_medicalNotes"/>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView android:id="@+id/writing_personalData"
+                                                      style="@style/Widget.MaterialComponents.CardView"
+                                                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                      app:contentPadding="@dimen/MarginReallyLittle"  android:layout_marginTop="@dimen/MarginReallyLittle"
+                                                      app:layout_constraintTop_toBottomOf="@+id/writing_emergencyData">
+        </android.support.design.card.MaterialCardView>
+        <Button android:id="@+id/writing_btn_writing"
+                android:text="Guardar Datos"
+                style="@style/Button"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_margin="@dimen/MarginLittle"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/writing_personalData"/>
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout android:id="@+id/bar"
+                                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:theme="@style/ThemeOverlay.AppCompat.Light" >
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="?attr/actionBarSize"
+                                           android:background="?attr/colorPrimary"
+                                           android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                           app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

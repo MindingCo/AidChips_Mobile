@@ -3,13 +3,11 @@ package com.minding.aidchips
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
-import com.minding.aidchips.HomeAdapter.*
 import com.minding.aidchips.ui.home.ClientViewModel
 
 class ReceivedPermissionsFragment : Fragment()
@@ -32,13 +30,14 @@ class ReceivedPermissionsFragment : Fragment()
         { chipsJSONArray ->
             if (chipsJSONArray != null)
             {
+                val chipsJSONArray2 =  chipsJSONArray.getJSONArray(0)
                 val permits: ArrayList<Permit> = ArrayList()
 
                 var i = 0
-                while (i < chipsJSONArray.length())
+                while (i < chipsJSONArray2.length())
                 {
-                    val chip = chipsJSONArray.getJSONObject(i)
-                    permits.add( Permit( chip.getString("nse_chp"), chip.getInt("id_usu"), chip.getString("npr_chp"), chip.getString("cel_chp"),  null) )
+                    val chip = chipsJSONArray2.getJSONObject(i)
+                    permits.add( Permit( chip.getString("nse_chp"), if (chip.has("id_usu")) chip.get("id_usu") as Int else 0, chip.getString("npr_chp"), chip.getString("cel_chp"),  null) )
                     i++
                 }
                 view!!.findViewById<ListView>(R.id.list_received_permissions).adapter = ReceivedPermissionsAdapter(permits)

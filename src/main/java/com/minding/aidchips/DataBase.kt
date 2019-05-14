@@ -39,6 +39,7 @@ class DataBase {
                 val USER = "/del/user"
                 val CHIP = "/del/chip"
                 val ALERT = "/del/alert"
+                val PERMIT = "/del/permit"
                 val GIVENP = "/del/givenpermission"
                 val RECEIVEDP = "/del/receivedpermission"
             }
@@ -79,7 +80,7 @@ class DataBase {
 //           <                     else JSONObject(response)
             }, Response.ErrorListener
             { e ->
-                Toast.makeText(ctx, e.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(ctx, e.toString(), Toast.LENGTH_LONG).show()
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 
@@ -91,7 +92,7 @@ class DataBase {
                 callback(if (response != "") JSONObject(response) else null)
             }, Response.ErrorListener
             { e ->
-                Toast.makeText(ctx, e.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(ctx, e.toString(), Toast.LENGTH_LONG).show()
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 
@@ -103,7 +104,7 @@ class DataBase {
                 callback(if (response != "") JSONArray(response) else null)
             }, Response.ErrorListener
             { e ->
-                Toast.makeText(ctx, e.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(ctx, e.toString(), Toast.LENGTH_LONG).show()
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 }

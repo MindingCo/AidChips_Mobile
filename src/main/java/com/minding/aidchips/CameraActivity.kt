@@ -1,6 +1,7 @@
 package com.minding.aidchips
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -37,7 +38,7 @@ class CameraActivity : AppCompatActivity()
         setContentView(R.layout.activity_camera)
 
         setTitle(R.string.title_camera)
-        setToolbar()
+        setupToolbar()
         cameraView = findViewById(R.id.camera_view)
         initQR()
     }
@@ -150,7 +151,8 @@ class CameraActivity : AppCompatActivity()
     @Suppress("PLATFORM_CLASS_MAPPED_TO_KOTLIN")
     private fun Runnable.wait(time: Long) = (this as Object).wait(time)
 
-    private fun setToolbar()
+    @SuppressLint("PrivateResource")
+    private fun setupToolbar()
     {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
