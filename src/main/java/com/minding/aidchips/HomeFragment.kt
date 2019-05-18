@@ -51,7 +51,7 @@ class HomeFragment : Fragment(), OnClickListener
                     chips.add(Chip(chip.getString("nse_chp"), chip.getString("npr_chp"), chip.getString("cel_chp")))
                     i++
                 }
-                chips.add(Chip("AAA003", "Patricia", "12312312"))
+//                chips.add(Chip("AAA003", "Patricia", "12312312"))
                 view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
                 view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
             }
