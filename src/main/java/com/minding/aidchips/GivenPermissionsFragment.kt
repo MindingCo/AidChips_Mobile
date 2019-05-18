@@ -3,11 +3,11 @@ package com.minding.aidchips
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import android.widget.ProgressBar
 import com.minding.aidchips.ui.home.ClientViewModel
 
 class GivenPermissionsFragment : Fragment()
@@ -42,10 +42,11 @@ class GivenPermissionsFragment : Fragment()
                 view!!.findViewById<ListView>(R.id.list_given_permissions).adapter = GivenPermissionsAdapter(permits)
             }
             else adviseNoGivenPermits()
+            view!!.findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
         }
     }
 
     private fun adviseNoGivenPermits() {
-        view!!.findViewById<RecyclerView>(R.id.home).background = view!!.resources.getDrawable(R.drawable.background_no_given_permits,null)
+        view!!.findViewById<ListView>(R.id.list_given_permissions).background = view!!.resources.getDrawable(R.drawable.background_no_given_permits,null)
     }
 }

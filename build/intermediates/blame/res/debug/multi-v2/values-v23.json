@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\MindBlast\\Documents\\Programacion\\Escuela\\6to\\PaulaProyectoAula\\AidChips_Mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\5c5a7bade83682b365876d5da893ce2c\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\4214d3ac1957acc544e89a628cf02037\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\c0deacc545f8fa6db74d4716e9e2a19e\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\2dd3722d5af605b3d82fce9be71b129a\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

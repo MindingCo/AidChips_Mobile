@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnClickListener
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import com.minding.aidchips.HomeAdapter.Chip
 import com.minding.aidchips.ui.home.ClientViewModel
 
@@ -55,11 +56,12 @@ class HomeFragment : Fragment(), OnClickListener
                 view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
             }
             else adviseNoChips()
+            view!!.findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
         }
-        val chips: ArrayList<Chip> = ArrayList()
-        chips.add(Chip("AAA003", "Patricia", "12312312"))
-        view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
-        view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
+//        val chips: ArrayList<Chip> = ArrayList()
+//        chips.add(Chip("AAA003", "Patricia", "12312312"))
+//        view!!.findViewById<RecyclerView>(R.id.home).adapter = HomeAdapter(chips)
+//        view!!.findViewById<RecyclerView>(R.id.home).layoutManager = GridLayoutManager(view!!.context, 1)
     }
 
     private fun adviseNoChips() {

@@ -1,4 +1,4 @@
-#Tue May 14 15:31:40 CDT 2019
+#Fri May 17 23:48:08 CDT 2019
 base.0=C\:\\Users\\MindBlast\\Documents\\Programacion\\Escuela\\6to\\PaulaProyectoAula\\AidChips_Mobile\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

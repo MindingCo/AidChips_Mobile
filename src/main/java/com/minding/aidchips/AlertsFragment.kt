@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import android.widget.ProgressBar
 import com.minding.aidchips.AlertsAdapter.Alert
 import com.minding.aidchips.ui.home.ClientViewModel
 
@@ -31,5 +32,6 @@ class AlertsFragment : Fragment()
         permissions.add(Alert(User(null, "Gustavo Peduzzi", null, "5583599322", R.drawable.ic_launcher_background, requireContext(), null),null ,"19 septiempre 2019", 123124, true))
 
         view!!.findViewById<ListView>(R.id.list_given_permissions).adapter = AlertsAdapter(permissions)
+        view!!.findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
     }
 }

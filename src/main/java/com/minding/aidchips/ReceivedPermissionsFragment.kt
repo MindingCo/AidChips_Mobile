@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import android.widget.ProgressBar
 import com.minding.aidchips.ui.home.ClientViewModel
 
 class ReceivedPermissionsFragment : Fragment()
@@ -43,10 +44,11 @@ class ReceivedPermissionsFragment : Fragment()
                 view!!.findViewById<ListView>(R.id.list_received_permissions).adapter = ReceivedPermissionsAdapter(permits)
             }
             else adviseNoReceivedPermits()
+            view!!.findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
         }
     }
 
     private fun adviseNoReceivedPermits() {
-        view!!.findViewById<RecyclerView>(R.id.home).background = view!!.resources.getDrawable(R.drawable.background_no_received_permits,null)
+        view!!.findViewById<ListView>(R.id.list_received_permissions).background  = view!!.resources.getDrawable(R.drawable.background_no_received_permits,null)
     }
 }

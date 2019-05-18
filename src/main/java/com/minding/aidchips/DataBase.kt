@@ -13,6 +13,7 @@ class DataBase {
     interface Action {
         companion object {
             val LOGIN = "/login"
+            val TYPEPERMIT = "/typeofpermit"
         }
         interface Add {
             companion object {
@@ -29,6 +30,7 @@ class DataBase {
                 val CHIP = "/get/chip"
                 val CHIPS = "/get/chips"
                 val ALERT = "/get/alert"
+                val PERMIT = "/get/permit"
                 val GIVENP = "/get/givenpermits"
                 val RECEIVEDP = "/get/receivedpermits"
             }
@@ -81,6 +83,7 @@ class DataBase {
             }, Response.ErrorListener
             { e ->
                 Toast.makeText(ctx, e.toString(), Toast.LENGTH_LONG).show()
+                callback(null)
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 
@@ -93,6 +96,7 @@ class DataBase {
             }, Response.ErrorListener
             { e ->
                 Toast.makeText(ctx, e.toString(), Toast.LENGTH_LONG).show()
+                callback(null)
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 
@@ -105,6 +109,7 @@ class DataBase {
             }, Response.ErrorListener
             { e ->
                 Toast.makeText(ctx, e.toString(), Toast.LENGTH_LONG).show()
+                callback(null)
             }) { override fun getParams(): MutableMap<String, String> = params })
     }
 }

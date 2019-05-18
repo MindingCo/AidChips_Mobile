@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\MindBlast\\Documents\\Programacion\\Escuela\\6to\\PaulaProyectoAula\\AidChips_Mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\5c5a7bade83682b365876d5da893ce2c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\4214d3ac1957acc544e89a628cf02037\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\b0a097c9103a15b75ecdd1537da0864f\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\MindBlast\\.gradle\\caches\\transforms-2\\files-2.1\\4ea044bfda977585e9885c908aa2092b\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

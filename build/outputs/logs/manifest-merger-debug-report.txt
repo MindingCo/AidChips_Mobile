@@ -4,55 +4,55 @@ ADDED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAu
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:2:1-48:12
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:2:1-48:12
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:2:1-48:12
-MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cfd608a80a326ded0efd9c09bd1c14c6\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b0a097c9103a15b75ecdd1537da0864f\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5c5a7bade83682b365876d5da893ce2c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\66e11a6f4f910aef07c2c6be6369de3c\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4f4606911e28251cf7c13eca7cae3e32\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:17:1-39:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c0deacc545f8fa6db74d4716e9e2a19e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\28426ea68ceebcd8f6923d784af1e7d2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-dynamic-animation:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1bec059e03554fd6762fb852c0352401\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3fdd08f5f4756df846df67c36c31cb50\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\2c3a831aa6c228ab5606a1e533d7c45d\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c93163d83e203859664d3240c3d172b1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4aa9d4515dc66b74191393b3ceb8598d\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7bbc22cb02df42c29b26a8eb8c238f6f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\18b8d4652ac3645aabe7dad197072ba1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\20a0c5d8f919918938af56b105038102\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\715ce3e88d259985dea6af685aead523\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b3f935bdefb4cb19c012eb5140c06d26\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e78c9e3d7f4f99f9ffe15a88e56af728\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\111e347e72a818f5e39043fb2255fab6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7cc75022ddd8dcf7ec077f9185e9c3a1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3b6d634b18d31a5f265b8d2c74b1c71b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\02c8a25c69c8767e9e1f55ae81c07e63\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\97be3b59318c319676e7a2de275cae0b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4a50b083af68b8f5dbbb37a6dd484c81\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\034675cccc669f5611393d4c4e5f4782\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6bdeadeb9b1909d72d1dce846117c196\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8979d2eb953f6f60015dc5bd07d01588\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5e8460493a31224193a4cb529fbb375f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\73f14d40ee5b824df5b33d5e06744130\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f32ba7b6e512be602f862ddfbe9565e7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\36b7b8ad76b49968f2a6f79b0fa7ba91\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d24e2ac3de096097ac635ed15e4650b6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c9cb0537759feb301f08b7e602c1d051\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\92b85c0c8f8e9075bf4fbc165142b742\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c514a80f12a8c89de75a60f95ae7a84a\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\25f4762bcdf4ba384cfa7024af042e08\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3d9bbac0480658fd845ff2710cba297e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\67f2d3b97a6e12b0342a11be25cddf1e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c3b7873f412a3d509d44015047504b8e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e4be19f53fffe129baedebfde3392588\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e336d2d7f12c2825f74f4ac928c4e0bf\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bda04ac135f2e5631e2b620e40b60d5a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9171ac850bf4f851e9a24e6a93a9cc4b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\81bfc341b65a568b09491a71ce226c4e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\55366baa34c45a353e80b55539f82c92\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ac4a5f020bfb7884a63c4d64655db759\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4ea044bfda977585e9885c908aa2092b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4214d3ac1957acc544e89a628cf02037\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1e9596868c6d3e9b42873829df3d97be\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\618262bb4665e1ec96b5585d4407dc46\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:17:1-39:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\2dd3722d5af605b3d82fce9be71b129a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7815b58b154211a78215432f73abb725\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-dynamic-animation:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\393c26b8795b589ff16fb2eafbbb1205\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b96eaf8d8fe35888fe410819e47c1543\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9137d78c1e9f44025c8de3d867da7cf9\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e9b6ec053d6d232d8d8eb0e5b0d29c64\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d18ad34dc63e13ccf6eddbb0492929f2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13b1368ac02f92f0aaaf9a0458f05fb7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7c2e61a34ee0c9bf88b62f46cc8306d3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8a33686af4d146449b32d9b797d53f4b\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a2610611038d34c06d58dbd58609e2be\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9916f67f94d632077fb6895a8a8befe1\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f8ae373e1d7f6995fb12f19c41b00108\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a5d2b9a15ea8bb385ca3f52d0ed506d7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\febbfba509e50c6fd54e059075fd151a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1f2c5009bcf4d67193fcabe8b93602c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\39af3878548a702a99b87cb2fbd1a226\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6b2b711d34171396fe0ffd7196edd9e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\af52f769bd04a81ffc001010c0f517ca\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a9fd7278db5c5113458d2d3d470c5f72\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\325ccf1b4a5efd77ca8e406c7100f1d2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bae2af34de334020145360a21b2c312b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6d304c93e76a60741b04b259910691cf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\194d63e0dc491598cbdde812337dce99\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b2c3747992e1e0e36334658d36eafbb5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bb217f590b056759087bc36fcb318a10\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\0c3fa31c6beb5ab0220ebe027eaab55d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cd036382ff83dd0345f780bb3e885a5d\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f834e7b8870bd565fd386fa3ec428c23\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ec7ca47eb0c808ba6bfaf74b71484d8b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f6a14a317165b063a9bc9086218a0393\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\834f02e96c02c03a9e00f5892b989ac4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\acb999b8b122e743874167e3ee79aa3d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\73ae22ceb3b9cb24e50fd07212a0584d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\39ef7dd6cd5fab10cc13f77ae7bfcd4f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c88af9fdf8148190264afa2264cb22d8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5433aee26c5ec4804b3f101fb1c6099d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7ee048400658b5fd16e4fbabefc4d4e1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b5a05465d9cee99741ba1693e3c9ac67\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68a61c9323f19cbe148f3fb0ddf83f33\AndroidManifest.xml:17:1-22:12
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:2:1-48:12
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:2:1-48:12
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:2:1-48:12
@@ -96,40 +96,40 @@ ADDED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAu
 		ADDED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:12:13-48
 application
 ADDED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:15:5-46:19
-MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cfd608a80a326ded0efd9c09bd1c14c6\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cfd608a80a326ded0efd9c09bd1c14c6\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b0a097c9103a15b75ecdd1537da0864f\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b0a097c9103a15b75ecdd1537da0864f\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\66e11a6f4f910aef07c2c6be6369de3c\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\66e11a6f4f910aef07c2c6be6369de3c\AndroidManifest.xml:7:5-20
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4f4606911e28251cf7c13eca7cae3e32\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4f4606911e28251cf7c13eca7cae3e32\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:22:5-37:19
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:22:5-28:19
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:22:5-28:19
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3fdd08f5f4756df846df67c36c31cb50\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3fdd08f5f4756df846df67c36c31cb50\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4aa9d4515dc66b74191393b3ceb8598d\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4aa9d4515dc66b74191393b3ceb8598d\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\18b8d4652ac3645aabe7dad197072ba1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\18b8d4652ac3645aabe7dad197072ba1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\20a0c5d8f919918938af56b105038102\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\20a0c5d8f919918938af56b105038102\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:22:5-26:19
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b3f935bdefb4cb19c012eb5140c06d26\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b3f935bdefb4cb19c012eb5140c06d26\AndroidManifest.xml:10:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c9cb0537759feb301f08b7e602c1d051\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c9cb0537759feb301f08b7e602c1d051\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\92b85c0c8f8e9075bf4fbc165142b742\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\92b85c0c8f8e9075bf4fbc165142b742\AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e336d2d7f12c2825f74f4ac928c4e0bf\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e336d2d7f12c2825f74f4ac928c4e0bf\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ac4a5f020bfb7884a63c4d64655db759\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ac4a5f020bfb7884a63c4d64655db759\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4ea044bfda977585e9885c908aa2092b\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4ea044bfda977585e9885c908aa2092b\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1e9596868c6d3e9b42873829df3d97be\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1e9596868c6d3e9b42873829df3d97be\AndroidManifest.xml:7:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\618262bb4665e1ec96b5585d4407dc46\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\618262bb4665e1ec96b5585d4407dc46\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:22:5-37:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:22:5-28:19
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b96eaf8d8fe35888fe410819e47c1543\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b96eaf8d8fe35888fe410819e47c1543\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d18ad34dc63e13ccf6eddbb0492929f2\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d18ad34dc63e13ccf6eddbb0492929f2\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7c2e61a34ee0c9bf88b62f46cc8306d3\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7c2e61a34ee0c9bf88b62f46cc8306d3\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8a33686af4d146449b32d9b797d53f4b\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8a33686af4d146449b32d9b797d53f4b\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9916f67f94d632077fb6895a8a8befe1\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9916f67f94d632077fb6895a8a8befe1\AndroidManifest.xml:10:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cd036382ff83dd0345f780bb3e885a5d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cd036382ff83dd0345f780bb3e885a5d\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f834e7b8870bd565fd386fa3ec428c23\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f834e7b8870bd565fd386fa3ec428c23\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c88af9fdf8148190264afa2264cb22d8\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c88af9fdf8148190264afa2264cb22d8\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c9cb0537759feb301f08b7e602c1d051\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cd036382ff83dd0345f780bb3e885a5d\AndroidManifest.xml:22:18-91
 	android:supportsRtl
 		ADDED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml:19:13-39
 	android:label
@@ -210,104 +210,104 @@ uses-sdk
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cfd608a80a326ded0efd9c09bd1c14c6\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cfd608a80a326ded0efd9c09bd1c14c6\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b0a097c9103a15b75ecdd1537da0864f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b0a097c9103a15b75ecdd1537da0864f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5c5a7bade83682b365876d5da893ce2c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5c5a7bade83682b365876d5da893ce2c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\66e11a6f4f910aef07c2c6be6369de3c\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\66e11a6f4f910aef07c2c6be6369de3c\AndroidManifest.xml:5:5-44
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4f4606911e28251cf7c13eca7cae3e32\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4f4606911e28251cf7c13eca7cae3e32\AndroidManifest.xml:7:5-43
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c0deacc545f8fa6db74d4716e9e2a19e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c0deacc545f8fa6db74d4716e9e2a19e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\28426ea68ceebcd8f6923d784af1e7d2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\28426ea68ceebcd8f6923d784af1e7d2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-dynamic-animation:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1bec059e03554fd6762fb852c0352401\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-dynamic-animation:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1bec059e03554fd6762fb852c0352401\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3fdd08f5f4756df846df67c36c31cb50\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3fdd08f5f4756df846df67c36c31cb50\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\2c3a831aa6c228ab5606a1e533d7c45d\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\2c3a831aa6c228ab5606a1e533d7c45d\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c93163d83e203859664d3240c3d172b1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c93163d83e203859664d3240c3d172b1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4aa9d4515dc66b74191393b3ceb8598d\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4aa9d4515dc66b74191393b3ceb8598d\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7bbc22cb02df42c29b26a8eb8c238f6f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7bbc22cb02df42c29b26a8eb8c238f6f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\18b8d4652ac3645aabe7dad197072ba1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\18b8d4652ac3645aabe7dad197072ba1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\20a0c5d8f919918938af56b105038102\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\20a0c5d8f919918938af56b105038102\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\715ce3e88d259985dea6af685aead523\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\715ce3e88d259985dea6af685aead523\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b3f935bdefb4cb19c012eb5140c06d26\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b3f935bdefb4cb19c012eb5140c06d26\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e78c9e3d7f4f99f9ffe15a88e56af728\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e78c9e3d7f4f99f9ffe15a88e56af728\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\111e347e72a818f5e39043fb2255fab6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\111e347e72a818f5e39043fb2255fab6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7cc75022ddd8dcf7ec077f9185e9c3a1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7cc75022ddd8dcf7ec077f9185e9c3a1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3b6d634b18d31a5f265b8d2c74b1c71b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3b6d634b18d31a5f265b8d2c74b1c71b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\02c8a25c69c8767e9e1f55ae81c07e63\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\02c8a25c69c8767e9e1f55ae81c07e63\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\97be3b59318c319676e7a2de275cae0b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\97be3b59318c319676e7a2de275cae0b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4a50b083af68b8f5dbbb37a6dd484c81\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4a50b083af68b8f5dbbb37a6dd484c81\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\034675cccc669f5611393d4c4e5f4782\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\034675cccc669f5611393d4c4e5f4782\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6bdeadeb9b1909d72d1dce846117c196\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6bdeadeb9b1909d72d1dce846117c196\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8979d2eb953f6f60015dc5bd07d01588\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8979d2eb953f6f60015dc5bd07d01588\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5e8460493a31224193a4cb529fbb375f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5e8460493a31224193a4cb529fbb375f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\73f14d40ee5b824df5b33d5e06744130\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\73f14d40ee5b824df5b33d5e06744130\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f32ba7b6e512be602f862ddfbe9565e7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f32ba7b6e512be602f862ddfbe9565e7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\36b7b8ad76b49968f2a6f79b0fa7ba91\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\36b7b8ad76b49968f2a6f79b0fa7ba91\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d24e2ac3de096097ac635ed15e4650b6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d24e2ac3de096097ac635ed15e4650b6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c9cb0537759feb301f08b7e602c1d051\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c9cb0537759feb301f08b7e602c1d051\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\92b85c0c8f8e9075bf4fbc165142b742\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\92b85c0c8f8e9075bf4fbc165142b742\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c514a80f12a8c89de75a60f95ae7a84a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c514a80f12a8c89de75a60f95ae7a84a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\25f4762bcdf4ba384cfa7024af042e08\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\25f4762bcdf4ba384cfa7024af042e08\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3d9bbac0480658fd845ff2710cba297e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\3d9bbac0480658fd845ff2710cba297e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\67f2d3b97a6e12b0342a11be25cddf1e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\67f2d3b97a6e12b0342a11be25cddf1e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c3b7873f412a3d509d44015047504b8e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c3b7873f412a3d509d44015047504b8e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e4be19f53fffe129baedebfde3392588\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e4be19f53fffe129baedebfde3392588\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e336d2d7f12c2825f74f4ac928c4e0bf\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e336d2d7f12c2825f74f4ac928c4e0bf\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bda04ac135f2e5631e2b620e40b60d5a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bda04ac135f2e5631e2b620e40b60d5a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9171ac850bf4f851e9a24e6a93a9cc4b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9171ac850bf4f851e9a24e6a93a9cc4b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\81bfc341b65a568b09491a71ce226c4e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\81bfc341b65a568b09491a71ce226c4e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\55366baa34c45a353e80b55539f82c92\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\55366baa34c45a353e80b55539f82c92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ac4a5f020bfb7884a63c4d64655db759\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ac4a5f020bfb7884a63c4d64655db759\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4ea044bfda977585e9885c908aa2092b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4ea044bfda977585e9885c908aa2092b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4214d3ac1957acc544e89a628cf02037\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\4214d3ac1957acc544e89a628cf02037\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1e9596868c6d3e9b42873829df3d97be\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1e9596868c6d3e9b42873829df3d97be\AndroidManifest.xml:5:5-44
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\618262bb4665e1ec96b5585d4407dc46\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\618262bb4665e1ec96b5585d4407dc46\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\2dd3722d5af605b3d82fce9be71b129a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\2dd3722d5af605b3d82fce9be71b129a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7815b58b154211a78215432f73abb725\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7815b58b154211a78215432f73abb725\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-dynamic-animation:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\393c26b8795b589ff16fb2eafbbb1205\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-dynamic-animation:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\393c26b8795b589ff16fb2eafbbb1205\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b96eaf8d8fe35888fe410819e47c1543\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b96eaf8d8fe35888fe410819e47c1543\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9137d78c1e9f44025c8de3d867da7cf9\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9137d78c1e9f44025c8de3d867da7cf9\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e9b6ec053d6d232d8d8eb0e5b0d29c64\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\e9b6ec053d6d232d8d8eb0e5b0d29c64\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d18ad34dc63e13ccf6eddbb0492929f2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\d18ad34dc63e13ccf6eddbb0492929f2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13b1368ac02f92f0aaaf9a0458f05fb7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13b1368ac02f92f0aaaf9a0458f05fb7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7c2e61a34ee0c9bf88b62f46cc8306d3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7c2e61a34ee0c9bf88b62f46cc8306d3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8a33686af4d146449b32d9b797d53f4b\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\8a33686af4d146449b32d9b797d53f4b\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a2610611038d34c06d58dbd58609e2be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a2610611038d34c06d58dbd58609e2be\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9916f67f94d632077fb6895a8a8befe1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\9916f67f94d632077fb6895a8a8befe1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f8ae373e1d7f6995fb12f19c41b00108\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f8ae373e1d7f6995fb12f19c41b00108\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a5d2b9a15ea8bb385ca3f52d0ed506d7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a5d2b9a15ea8bb385ca3f52d0ed506d7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\febbfba509e50c6fd54e059075fd151a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\febbfba509e50c6fd54e059075fd151a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1f2c5009bcf4d67193fcabe8b93602c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\1f2c5009bcf4d67193fcabe8b93602c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\39af3878548a702a99b87cb2fbd1a226\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\39af3878548a702a99b87cb2fbd1a226\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6b2b711d34171396fe0ffd7196edd9e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6b2b711d34171396fe0ffd7196edd9e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\af52f769bd04a81ffc001010c0f517ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\af52f769bd04a81ffc001010c0f517ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a9fd7278db5c5113458d2d3d470c5f72\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\a9fd7278db5c5113458d2d3d470c5f72\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\325ccf1b4a5efd77ca8e406c7100f1d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\325ccf1b4a5efd77ca8e406c7100f1d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bae2af34de334020145360a21b2c312b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bae2af34de334020145360a21b2c312b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6d304c93e76a60741b04b259910691cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6d304c93e76a60741b04b259910691cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\194d63e0dc491598cbdde812337dce99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\194d63e0dc491598cbdde812337dce99\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b2c3747992e1e0e36334658d36eafbb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b2c3747992e1e0e36334658d36eafbb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bb217f590b056759087bc36fcb318a10\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\bb217f590b056759087bc36fcb318a10\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\0c3fa31c6beb5ab0220ebe027eaab55d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\0c3fa31c6beb5ab0220ebe027eaab55d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cd036382ff83dd0345f780bb3e885a5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\cd036382ff83dd0345f780bb3e885a5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f834e7b8870bd565fd386fa3ec428c23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f834e7b8870bd565fd386fa3ec428c23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ec7ca47eb0c808ba6bfaf74b71484d8b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\ec7ca47eb0c808ba6bfaf74b71484d8b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f6a14a317165b063a9bc9086218a0393\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\f6a14a317165b063a9bc9086218a0393\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\834f02e96c02c03a9e00f5892b989ac4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\834f02e96c02c03a9e00f5892b989ac4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\acb999b8b122e743874167e3ee79aa3d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\acb999b8b122e743874167e3ee79aa3d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\73ae22ceb3b9cb24e50fd07212a0584d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\73ae22ceb3b9cb24e50fd07212a0584d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\39ef7dd6cd5fab10cc13f77ae7bfcd4f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\39ef7dd6cd5fab10cc13f77ae7bfcd4f\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c88af9fdf8148190264afa2264cb22d8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\c88af9fdf8148190264afa2264cb22d8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5433aee26c5ec4804b3f101fb1c6099d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5433aee26c5ec4804b3f101fb1c6099d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7ee048400658b5fd16e4fbabefc4d4e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\7ee048400658b5fd16e4fbabefc4d4e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b5a05465d9cee99741ba1693e3c9ac67\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\b5a05465d9cee99741ba1693e3c9ac67\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68a61c9323f19cbe148f3fb0ddf83f33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68a61c9323f19cbe148f3fb0ddf83f33\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -319,44 +319,44 @@ INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyect
 		ADDED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\MindBlast\Documents\Programacion\Escuela\6to\PaulaProyectoAula\AidChips_Mobile\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:33:9-36:110
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:33:9-36:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:35:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\6e428c459381a2614e5660c82b0c3f5f\AndroidManifest.xml:34:13-89
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5d965798b20548925f5c0fdf03d517e5\AndroidManifest.xml:34:13-89
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:23:9-27:43
+ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:25:13-68
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:25:13-68
 	android:multiprocess
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:27:13-40
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:26:13-37
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\13d73fa0919b2192782de824ed50932b\AndroidManifest.xml:24:13-83
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\5321db776ceab52b3bb56f6d270fbc62\AndroidManifest.xml:24:13-83
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\63e11830d09cb8ee1ac9a670c9557269\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\74f7efea161ab43a4645533c53e0b433\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\42f36a78814b53bfadbc2ffca623054f\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\MindBlast\.gradle\caches\transforms-2\files-2.1\68f818a513b0e61fa9a544d900e10d2e\AndroidManifest.xml:24:13-58

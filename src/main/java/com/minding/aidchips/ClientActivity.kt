@@ -84,7 +84,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         "name": "${dialogPropierty.text}",
         "tel": "${dialogTel.text}"
     },
-    "contact data": {
+    "emergency data": {
         "full name":"",
         "address":"",
         "health insurance":"",
@@ -94,7 +94,7 @@ class ClientActivity : AppCompatActivity(), View.OnClickListener, OnLongClickLis
         "donor":"",
         "medial notes":""
     },
-    "emergency data": {
+    "contact data": {
 
     },
     "personal data": {

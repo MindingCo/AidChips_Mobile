@@ -1452,6 +1452,7 @@ id list_given_permissions
 id list_item
 id list_received_permissions
 id list_settings
+id loader
 id login_advise
 id login_btn_auth_google
 id login_btn_login
@@ -1523,6 +1524,7 @@ id reading_field_name
 id reading_field_propierty
 id reading_field_tel
 id reading_healthInsurance
+id reading_layout_container
 id reading_medicalNotes
 id reading_medicines
 id reading_name

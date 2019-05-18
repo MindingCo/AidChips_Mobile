@@ -41,17 +41,21 @@ class HomeAdapter(private  var chips: ArrayList<Chip>) : RecyclerView.Adapter<Ho
     private fun deleteChip(serial: String, pos: Int, ctx: Context)
     {
         val params : MutableMap<String, String> = HashMap()
+        params["id"] = SavedData().getIntSavedData(ctx, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID).toString()
         params["nserie"] = serial
+        params["owner"] = "true"
 
         DataBase().requestOperation(ctx, DataBase.Action.Del.PERMIT, DataBase.Method.POST, params)
         { completed ->
-            if (completed!!)
+            when (completed)
             {
-                chips.removeAt(pos)
-                notifyItemRemoved(pos)
+                true ->
+                {
+                    chips.removeAt(pos)
+                    notifyItemRemoved(pos)
+                }
+                else -> Toast.makeText(ctx, "Eliminacion de permiso fallida", Toast.LENGTH_SHORT).show()
             }
-            else
-                Toast.makeText(ctx, "Eliminacion fallida", Toast.LENGTH_SHORT).show()
         }
     }
 }

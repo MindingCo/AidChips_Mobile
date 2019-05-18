@@ -70,7 +70,7 @@ class WritingActivity : AppCompatActivity(), OnClickListener
         "name": "${findViewById<TextView>(R.id.writing_field_propierty).text}",
         "tel": "${findViewById<TextView>(R.id.writing_field_tel).text}"
     },
-    "contact data": {
+    "emergency data": {
         "full name":"${findViewById<TextView>(R.id.writing_field_name).text}",
         "address":"${findViewById<TextView>(R.id.writing_field_address).text}",
         "health insurance":"${findViewById<TextView>(R.id.writing_field_healthInsurance).text}",
@@ -80,7 +80,7 @@ class WritingActivity : AppCompatActivity(), OnClickListener
         "donor":"${findViewById<Spinner>(R.id.writing_field_donor).selectedItem}",
         "medial notes":"${findViewById<TextView>(R.id.writing_field_medicalNotes).text}"
     },
-    "emergency data": {
+    "contact data": {
 
     },
     "personal data": {
@@ -109,13 +109,13 @@ class WritingActivity : AppCompatActivity(), OnClickListener
                     findViewById<TextView>(R.id.writing_field_propierty).text = property.getString("name")
                     findViewById<TextView>(R.id.writing_field_tel).text = property.getString("tel")
 
-                    if (chip.has("contact data"))
+                    if (chip.has("emergency data"))
                     {
-                        val contactData = chip.getJSONObject("contact data")
-                        findViewById<EditText>(R.id.writing_field_name).setText(if (contactData.has("full name")) chip.getJSONObject("contact data").getString("full name") else "")
-                        findViewById<EditText>(R.id.writing_field_address).setText(if (contactData.has("address")) chip.getJSONObject("contact data").getString("address") else "")
-                        findViewById<EditText>(R.id.writing_field_healthInsurance).setText(if (contactData.has("health insurance")) chip.getJSONObject("contact data").getString("health insurance") else "")
-                        if (chip.getJSONObject("contact data").has("blood"))
+                        val contactData = chip.getJSONObject("emergency data")
+                        findViewById<EditText>(R.id.writing_field_name).setText(if (contactData.has("full name")) chip.getJSONObject("emergency data").getString("full name") else "")
+                        findViewById<EditText>(R.id.writing_field_address).setText(if (contactData.has("address")) chip.getJSONObject("emergency data").getString("address") else "")
+                        findViewById<EditText>(R.id.writing_field_healthInsurance).setText(if (contactData.has("health insurance")) chip.getJSONObject("emergency data").getString("health insurance") else "")
+                        if (chip.getJSONObject("emergency data").has("blood"))
                         {
                             findViewById<Spinner>(R.id.writing_field_blood).setSelection(
                                 when (contactData.getString("blood"))
@@ -131,9 +131,9 @@ class WritingActivity : AppCompatActivity(), OnClickListener
                                     else -> 0
                                 }, true)
                         }
-                        findViewById<EditText>(R.id.writing_field_allergies).setText(if (contactData.has("allergies")) chip.getJSONObject("contact data").getString("allergies") else "")
-                        findViewById<EditText>(R.id.writing_field_medicines).setText(if (contactData.has("medicines")) chip.getJSONObject("contact data").getString("medicines") else "")
-                        if (chip.getJSONObject("contact data").has("donor"))
+                        findViewById<EditText>(R.id.writing_field_allergies).setText(if (contactData.has("allergies")) chip.getJSONObject("emergency data").getString("allergies") else "")
+                        findViewById<EditText>(R.id.writing_field_medicines).setText(if (contactData.has("medicines")) chip.getJSONObject("emergency data").getString("medicines") else "")
+                        if (chip.getJSONObject("emergency data").has("donor"))
                         {
                             findViewById<Spinner>(R.id.writing_field_donor).setSelection(
                                 when (contactData.getString("donor"))
@@ -145,7 +145,7 @@ class WritingActivity : AppCompatActivity(), OnClickListener
                                     else -> 0
                                 }, true)
                         }
-                        findViewById<EditText>(R.id.writing_field_medicalNotes).setText(if (contactData.has("medial notes")) chip.getJSONObject("contact data").getString("medial notes") else "")
+                        findViewById<EditText>(R.id.writing_field_medicalNotes).setText(if (contactData.has("medial notes")) chip.getJSONObject("emergency data").getString("medial notes") else "")
                     }
                 }
             }
