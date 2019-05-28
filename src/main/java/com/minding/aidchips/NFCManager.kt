@@ -34,11 +34,12 @@ class NFCManager(context: Context)
             null
 //            Toast.makeText(ctx, "No NDEF messages found!", Toast.LENGTH_SHORT).show()
     }
-    fun write(intent: Intent, message: String, ctx: Context): Boolean =
-        writeNdefMessage(
-            intent.getParcelableExtra(NfcAdapter.EXTRA_TAG),
-            createNdefMessage(message),
-            ctx)
+    fun write(intent: Intent, message: String, ctx: Context): Boolean {
+        val tag: Tag? = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG)
+        val ndefMessage = createNdefMessage(message)
+
+        return writeNdefMessage(tag, ndefMessage, ctx)
+    }
     fun getNSerial(intent: Intent): String
     {
         val tagId = intent.getByteArrayExtra(NfcAdapter.EXTRA_ID)
@@ -99,22 +100,19 @@ class NFCManager(context: Context)
     {
         try
         {
-            if (tag == null)
-            {
+            if (tag == null) {
                 Toast.makeText(ctx, "Tag object cannot be null!", Toast.LENGTH_SHORT).show()
                 return false
             }
 
             val ndef = Ndef.get(tag)
 
-            if (ndef == null)
+            if (ndef == null) {
                 // format tag with the ndef format and writes the message
                 formatTag(tag, ndefMessage, ctx)
-            else
-            {
+            } else {
                 ndef.connect()
-                if (!ndef.isWritable)
-                {
+                if (!ndef.isWritable) {
                     Toast.makeText(ctx, "Tag is not writable!", Toast.LENGTH_SHORT).show()
                     ndef.close()
                     return false
