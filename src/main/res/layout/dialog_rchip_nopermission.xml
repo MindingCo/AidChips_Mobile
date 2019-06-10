@@ -5,7 +5,7 @@
                                              android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageButton android:id="@+id/closeDialog"
-                 android:src="@android:drawable/ic_menu_close_clear_cancel"
+                 android:src="@drawable/abc_ic_clear_material"
                  android:background="@null"
                  android:contentDescription="@null"
                  android:layout_margin="@dimen/MarginReallyLittle"

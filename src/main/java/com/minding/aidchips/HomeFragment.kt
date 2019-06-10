@@ -36,7 +36,6 @@ class HomeFragment : Fragment(), OnClickListener
 
         val params : MutableMap<String, String> = HashMap()
         params["id"] = SavedData().getIntSavedData(view!!.context, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID).toString()
-        params["owner"] = "true"
 
         DataBase().requestArrayJSON(view!!.context, DataBase.Action.Get.CHIPS, DataBase.Method.POST, params)
         { chipsJSONArray ->
@@ -48,7 +47,7 @@ class HomeFragment : Fragment(), OnClickListener
                 while (i < chipsJSONArray.length())
                 {
                     val chip = chipsJSONArray.getJSONObject(i)
-                    chips.add(Chip(chip.getString("nse_chp"), chip.getString("npr_chp"), chip.getString("cel_chp")))
+                    chips.add(Chip(chip.getString("nse_chp"), chip.getString("por_chp"), chip.getString("tel_chp")))
                     i++
                 }
 //                chips.add(Chip("AAA003", "Patricia", "12312312"))

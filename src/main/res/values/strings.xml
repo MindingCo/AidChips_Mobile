@@ -68,6 +68,8 @@
     <string name="field_healthInsurance">Health Insurance</string>
     <string name="field_donor">Donor</string>
     <string name="field_medicalNotes">Medical Notes</string>
+    <string name="notify_invited">Acceso como Invitado</string>
+    <string name="notify_emergency">Acceso como Emergencia</string>
     <string-array name="yesornot">
         <item>Not</item>
         <item>Yes</item>

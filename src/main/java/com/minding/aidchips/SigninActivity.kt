@@ -65,9 +65,9 @@ class SigninActivity : AppCompatActivity(), OnClickListener
                                         SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.GOOGLESIGNIN, false)
 
                                         SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.ID, userJSON!!.getInt("id_usu"))
-                                        SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.NAME, userJSON.getString("nmc_usu"))
+                                        SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.NAME, userJSON.getString("nom_usu"))
                                         SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.EMAIL, userJSON.getString("ema_usu"))
-                                        SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.TEL, userJSON.getString("cel_usu"))
+                                        SavedData().setSavedData(this, SavedData.NameGroup.SESSION, SavedData.Elements.Session.TEL, userJSON.getString("tel_usu"))
 
                                         startActivity(Intent(this, ClientActivity::class.java))
                                         overridePendingTransition(R.anim.fade_in, R.anim.nothing)

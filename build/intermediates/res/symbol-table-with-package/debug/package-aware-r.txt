@@ -1890,6 +1890,8 @@ string mail
 string mtrl_chip_close_icon_content_description
 string notice_privacy
 string notice_privacy_desc
+string notify_emergency
+string notify_invited
 string notify_request
 string password_toggle_content_description
 string path_password_eye

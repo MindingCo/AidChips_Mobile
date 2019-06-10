@@ -24,8 +24,9 @@ class GivenPermissionsAdapter(private  var permits: ArrayList<Permit>) : BaseAda
             })
             findViewById<TextView>(R.id.fprofile_name).text = permits[pos].name
             findViewById<TextView>(R.id.item_tel).text = permits[pos].tel
-            findViewById<ImageView>(R.id.fprofile_image).setImageResource(permits[pos].image!!)
-            findViewById<TextView>(R.id.item_chip).text = permits[pos].nSerie.toString()
+            if (permits[pos].image != null)
+                findViewById<ImageView>(R.id.fprofile_image).setImageResource(permits[pos].image!!)
+            findViewById<TextView>(R.id.item_chip).text = permits[pos].nSerie
 
             val itemExtra = findViewById<TextView>(R.id.item_extra).buildCollapsible()
             val itemAfterTitle= findViewById<TextView>(R.id.item_after_tittle).buildCollapsible()

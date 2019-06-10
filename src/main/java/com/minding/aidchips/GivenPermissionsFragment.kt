@@ -36,7 +36,7 @@ class GivenPermissionsFragment : Fragment()
                 while (i < chipsJSONArray.length())
                 {
                     val chip = chipsJSONArray.getJSONObject(i)
-                    permits.add( Permit( chip.getString("nse_chp"), chip.getInt("id_usu"), chip.getString("npr_chp"), chip.getString("cel_chp"),  null) )
+                    permits.add( Permit( chip.getString("nse_chp"), chip.getInt("id_usu"), chip.getString("nom_usu"), chip.getString("tel_usu"),  null) )
                     i++
                 }
                 view!!.findViewById<ListView>(R.id.list_given_permissions).adapter = GivenPermissionsAdapter(permits)

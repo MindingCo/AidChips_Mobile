@@ -19,7 +19,7 @@ class DataBase {
             companion object {
                 val USER = "/add/user"
                 val CHIP = "/add/chip"
-                val ALERT = "/add/alert"
+                val ALERT = "/add/notif"
                 val PERMIT = "/add/permit"
             }
         }
@@ -29,7 +29,7 @@ class DataBase {
                 val USER = "/get/user"
                 val CHIP = "/get/chip"
                 val CHIPS = "/get/chips"
-                val ALERT = "/get/alert"
+                val NOTIF = "/get/notif"
                 val PERMIT = "/get/permit"
                 val GIVENP = "/get/givenpermits"
                 val RECEIVEDP = "/get/receivedpermits"
@@ -40,7 +40,7 @@ class DataBase {
             companion object {
                 val USER = "/del/user"
                 val CHIP = "/del/chip"
-                val ALERT = "/del/alert"
+                val ALERT = "/del/notif"
                 val PERMIT = "/del/permit"
                 val GIVENP = "/del/givenpermission"
                 val RECEIVEDP = "/del/receivedpermission"
@@ -51,7 +51,7 @@ class DataBase {
             companion object {
                 val USER = "/upd/USER"
                 val CHIP = "/upd/chip"
-                val ALERT = "/upd/alert"
+                val ALERT = "/upd/notif"
                 val GIVENP = "/upd/Permit"
                 val RECEIVEDP = "/upd/ReceivedPermission"
             }
